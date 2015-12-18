@@ -414,6 +414,12 @@ p {
 .timeline__item--right:before {
   left: -3px; }
 
+.timeline__item:first-child:before {
+  top: 50%; }
+
+.timeline__item:last-child:before {
+  bottom: 50%; }
+
 /**
  * 玉
  */
