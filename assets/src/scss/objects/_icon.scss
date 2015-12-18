@@ -7,27 +7,27 @@
 	overflow: hidden;
 	
 	&--about {
-		background-image: url( '../../images/icon/about.svg' );
+		background-image: url( '../images/icon/about.svg' );
 	}
 	
 	&--content {
-		background-image: url( '../../images/icon/content.svg' );
+		background-image: url( '../images/icon/content.svg' );
 	}
 	
 	&--speaker {
-		background-image: url( '../../images/icon/speaker.svg' );
+		background-image: url( '../images/icon/speaker.svg' );
 	}
 	
 	&--timeline {
-		background-image: url( '../../images/icon/timeline.svg' );
+		background-image: url( '../images/icon/timeline.svg' );
 	}
 	
 	&--location {
-		background-image: url( '../../images/icon/location.svg' );
+		background-image: url( '../images/icon/location.svg' );
 	}
 	
 	&--contact {
-		background-image: url( '../../images/icon/contact.svg' );
+		background-image: url( '../images/icon/contact.svg' );
 	}
 }
 
@@ -41,38 +41,38 @@
 	border-radius: 100%;
 
 	&--conti {
-		background-image: url( '../../images/speakers/conti.jpg' );
+		background-image: url( '../images/speakers/conti.jpg' );
 	}
 
 	&--fukazawa {
-		background-image: url( '../../images/speakers/fukazawa.jpg' );
+		background-image: url( '../images/speakers/fukazawa.jpg' );
 	}
 
 	&--hide {
-		background-image: url( '../../images/speakers/hide.png' );
+		background-image: url( '../images/speakers/hide.png' );
 	}
 
 	&--ishikawa {
-		background-image: url( '../../images/speakers/ishikawa.jpg' );
+		background-image: url( '../images/speakers/ishikawa.jpg' );
 	}
 
 	&--kitajima {
-		background-image: url( '../../images/speakers/kitajima.jpg' );
+		background-image: url( '../images/speakers/kitajima.jpg' );
 	}
 
 	&--mignon {
-		background-image: url( '../../images/speakers/mignon.png' );
+		background-image: url( '../images/speakers/mignon.png' );
 	}
 
 	&--moriyama {
-		background-image: url( '../../images/speakers/moriyama.jpg' );
+		background-image: url( '../images/speakers/moriyama.jpg' );
 	}
 
 	&--oohara {
-		background-image: url( '../../images/speakers/oohara.jpg' );
+		background-image: url( '../images/speakers/oohara.jpg' );
 	}
 
 	&--torounit {
-		background-image: url( '../../images/speakers/torounit.png' );
+		background-image: url( '../images/speakers/torounit.png' );
 	}
 }

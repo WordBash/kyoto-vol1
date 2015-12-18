@@ -9,6 +9,7 @@
 var config = require('../config.js');
 var handleErrors = require('../util/handleErrors.js');
 var gulp = require('gulp');
+var minifyCss = require('gulp-minify-css');
 //var bulkSass = require('gulp-sass-bulk-import');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
