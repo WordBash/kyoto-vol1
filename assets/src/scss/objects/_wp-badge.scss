@@ -1,0 +1,40 @@
+.wp-badge {
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 26px;
+		width: 26px;
+		overflow: hidden;
+		vertical-align: top;
+	}
+	
+	&--speaker {
+		&:before {
+			background-image: url( '../../images/wp-badges/speaker.png' );
+		}
+	}
+	
+	&--community {
+		&:before {
+			background-image: url( '../../images/wp-badges/community.png' );
+		}
+	}
+	
+	&--theme {
+		&:before {
+			background-image: url( '../../images/wp-badges/theme.png' );
+		}
+	}
+	
+	&--plugin {
+		&:before {
+			background-image: url( '../../images/wp-badges/plugin.png' );
+		}
+	}
+	
+	&--translation {
+		&:before {
+			background-image: url( '../../images/wp-badges/translation.png' );
+		}
+	}
+}

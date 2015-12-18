@@ -1,0 +1,12 @@
+#header {
+	.container {
+		position: relative;
+	}
+	
+	.global-nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+}

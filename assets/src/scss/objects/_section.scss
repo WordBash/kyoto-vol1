@@ -1,0 +1,21 @@
+.section {
+	padding-top: 55px;
+	
+	&__title {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 2.4rem;
+		font-weight: normal;
+		margin: 0 0 20px;
+		text-align: center;
+		
+		img {
+			display: block;
+			margin: 0 auto 10px;
+		}
+	}
+	
+	&__content {
+		background-color: #F9F9F9;
+		padding: 80px;
+	}
+}

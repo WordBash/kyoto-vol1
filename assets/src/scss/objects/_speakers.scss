@@ -1,0 +1,128 @@
+.speakers {
+	.row {
+		margin-right: -5px;
+		margin-left: -5px;
+		display: flex;
+		flex-wrap: wrap;
+		
+		> div {
+			padding-right: 5px;
+			padding-left: 5px;
+			flex-grow: 1;
+			flex-basis: 33.33333%;
+			display: flex;
+		}
+		
+		:nth-child(3n+1) {
+			clear: both;;
+		}
+	}
+}
+
+.speaker {
+	background-color: #f9f9f9;
+	margin-bottom: 20px;
+	padding: 20px 15px;
+	flex-basis: 100%;
+	
+	&__media {
+		margin: 0 auto 1.5rem;
+		text-align: center;
+		
+		.person {
+			height: 170px;
+			width: 170px;
+		}
+	}
+	
+	&__name {
+		font-weight: bold;
+		font-size: 2.1rem;
+		margin: 0 0 1rem;
+		text-align: center;
+	}
+	
+	&__badges {
+		margin: 0 0 1rem;
+		text-align: center;
+		
+		.wp-badge {
+			margin: 0 2px;
+		}
+	}
+	
+	&__tweet {
+		margin-top: 5rem;
+		position: relative;
+		
+		&-title {
+			background-color: #00b9d4;
+			border-radius: 100%;
+			color: #fff;
+			font-size: 12px;
+			margin: 0;
+			padding: 7px 10px;
+			position: absolute;
+			top: -35px;
+			left: 50%;
+			transform: translateX(-50%);
+			
+			&:after {
+				content: '';
+				border-top: 5px solid #00b9d4;
+				border-right: 2px solid transparent;
+				border-left: 2px solid transparent;
+				position: absolute;
+				bottom: -5px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+
+.person {
+	background-size: cover;
+	background-position: 50% 50%;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	overflow: hidden;
+	border-radius: 100%;
+}
+
+.person-conti {
+	background-image: url( '../../images/speakers/conti.jpg' );
+}
+
+.person-fukazawa {
+	background-image: url( '../../images/speakers/fukazawa.jpg' );
+}
+
+.person-hide {
+	background-image: url( '../../images/speakers/hide.png' );
+}
+
+.person-ishikawa {
+	background-image: url( '../../images/speakers/ishikawa.jpg' );
+}
+
+.person-kitajima {
+	background-image: url( '../../images/speakers/kitajima.jpg' );
+}
+
+.person-mignon {
+	background-image: url( '../../images/speakers/mignon.png' );
+}
+
+.person-moriyama {
+	background-image: url( '../../images/speakers/moriyama.jpg' );
+}
+
+.person-oohara {
+	background-image: url( '../../images/speakers/oohara.jpg' );
+}
+
+.person-torounit {
+	background-image: url( '../../images/speakers/torounit.png' );
+}
