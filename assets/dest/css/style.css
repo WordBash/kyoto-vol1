@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* ========================================
+ * variables
+ ======================================= */
+/* ========================================
+ * mixins
+ ======================================= */
+/* ========================================
  * foundation
  ======================================= */
 html {
@@ -209,7 +215,10 @@ p {
       width: 80px; }
   .section__content {
     background-color: #F9F9F9;
-    padding: 80px; }
+    padding: 30px 20px; }
+    @media (min-width: 992px) {
+      .section__content {
+        padding: 80px; } }
 
 .about__line {
   font-size: 3.2rem;

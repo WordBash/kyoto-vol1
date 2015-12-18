@@ -19,6 +19,10 @@
 	
 	&__content {
 		background-color: #F9F9F9;
-		padding: 80px;
+		padding: 30px 20px;
+		
+		@include bp-min($screen-md-min) {
+			padding: 80px;
+		}
 	}
 }
