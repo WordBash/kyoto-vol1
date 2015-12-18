@@ -342,13 +342,24 @@ p {
   overflow: hidden; }
 
 .timeline__item {
-  margin-top: -140px;
-  width: 50%;
-  position: relative; }
-  .timeline__item:first-child, .timeline__item:last-child {
-    margin-top: 0; }
-  .timeline__item:nth-child(2) {
-    margin-top: -40px; }
+  margin-bottom: 2rem; }
+  @media (min-width: 992px) {
+    .timeline__item {
+      margin-top: -140px;
+      margin-bottom: 0;
+      width: 50%;
+      position: relative; }
+      .timeline__item:first-child, .timeline__item:last-child {
+        margin-top: 0; }
+      .timeline__item:nth-child(2) {
+        margin-top: -40px; }
+      .timeline__item--left {
+        float: left;
+        padding-right: 60px; }
+      .timeline__item--right {
+        float: left;
+        margin-left: 50%;
+        padding-left: 60px; } }
   .timeline__item .session {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -395,97 +406,82 @@ p {
         padding: 4px 8px;
         position: absolute;
         top: -20px; }
-  .timeline__item--left {
-    float: left;
-    padding-right: 60px; }
-  .timeline__item--right {
-    float: left;
-    margin-left: 50%;
-    padding-left: 60px; }
 
 /**
  * セッションの高さをだいたい揃える
  */
-.session {
-  min-height: 300px; }
-  .timeline__item:first-child .session, .timeline__item:last-child .session {
-    min-height: 0; }
+@media (min-width: 992px) {
+  .session {
+    min-height: 300px; }
+    .timeline__item:first-child .session, .timeline__item:last-child .session {
+      min-height: 0; } }
 
 /**
  * 中央線
  */
-.timeline__item:before {
-  content: '';
-  display: block;
-  background-color: #000;
-  width: 6px;
-  position: absolute;
-  top: 0;
-  bottom: 0; }
-
-.timeline__item--left:before {
-  right: -3px; }
-
-.timeline__item--right:before {
-  left: -3px; }
-
-.timeline__item:first-child:before {
-  top: 50%; }
-
-.timeline__item:last-child:before {
-  bottom: 50%; }
+@media (min-width: 992px) {
+  .timeline__item:before {
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+  .timeline__item--left:before {
+    right: -3px; }
+  .timeline__item--right:before {
+    left: -3px; }
+  .timeline__item:first-child:before {
+    top: 50%; }
+  .timeline__item:last-child:before {
+    bottom: 50%; } }
 
 /**
  * 玉
  */
-.timeline__item:after {
-  content: '';
-  display: block;
-  background-color: #fff;
-  height: 22px;
-  width: 22px;
-  border: 5px solid #000;
-  border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 1; }
-
-.timeline__item--left:after {
-  right: -11px; }
-
-.timeline__item--right:after {
-  left: -11px; }
-
-/**
- * 矢印
- */
-.session:before, .session:after {
-  content: '';
-  display: block;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.timeline__item--left .session:before {
-  border-left: 10px solid #ccc;
-  right: -10px; }
-
-.timeline__item--left .session:after {
-  border-left: 10px solid #fff;
-  right: -9px; }
-
-.timeline__item--right .session:before {
-  border-right: 10px solid #ccc;
-  left: -10px; }
-
-.timeline__item--right .session:after {
-  border-right: 10px solid #fff;
-  left: -9px; }
+@media (min-width: 992px) {
+  .timeline__item:after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 22px;
+    width: 22px;
+    border: 5px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1; }
+  .timeline__item--left:after {
+    right: -11px; }
+  .timeline__item--right:after {
+    left: -11px; }
+  /**
+	 * 矢印
+	 */
+  .session:before, .session:after {
+    content: '';
+    display: block;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .timeline__item--left .session:before {
+    border-left: 10px solid #ccc;
+    right: -10px; }
+  .timeline__item--left .session:after {
+    border-left: 10px solid #fff;
+    right: -9px; }
+  .timeline__item--right .session:before {
+    border-right: 10px solid #ccc;
+    left: -10px; }
+  .timeline__item--right .session:after {
+    border-right: 10px solid #fff;
+    left: -9px; } }
 
 .location .section__content {
   padding-right: 20px;
