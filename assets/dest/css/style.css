@@ -63,6 +63,53 @@ p {
 .wp-badge--translation:before {
   background-image: url("../../images/wp-badges/translation.png"); }
 
+.icon {
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: inline-block;
+  overflow: hidden; }
+  .icon--about {
+    background-image: url("../../images/icon/about.svg"); }
+  .icon--content {
+    background-image: url("../../images/icon/content.svg"); }
+  .icon--speaker {
+    background-image: url("../../images/icon/speaker.svg"); }
+  .icon--timeline {
+    background-image: url("../../images/icon/timeline.svg"); }
+  .icon--location {
+    background-image: url("../../images/icon/location.svg"); }
+  .icon--contact {
+    background-image: url("../../images/icon/contact.svg"); }
+
+.person {
+  background-size: cover;
+  background-position: 50% 50%;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  border-radius: 100%; }
+  .person--conti {
+    background-image: url("../../images/speakers/conti.jpg"); }
+  .person--fukazawa {
+    background-image: url("../../images/speakers/fukazawa.jpg"); }
+  .person--hide {
+    background-image: url("../../images/speakers/hide.png"); }
+  .person--ishikawa {
+    background-image: url("../../images/speakers/ishikawa.jpg"); }
+  .person--kitajima {
+    background-image: url("../../images/speakers/kitajima.jpg"); }
+  .person--mignon {
+    background-image: url("../../images/speakers/mignon.png"); }
+  .person--moriyama {
+    background-image: url("../../images/speakers/moriyama.jpg"); }
+  .person--oohara {
+    background-image: url("../../images/speakers/oohara.jpg"); }
+  .person--torounit {
+    background-image: url("../../images/speakers/torounit.png"); }
+
 .btn-register {
   background-color: #B41426;
   border-radius: 30px;
@@ -88,26 +135,11 @@ p {
     float: left;
     margin: 0;
     padding: 0 2px 10px;
-    width: 104px; }
-  .global-nav__icon {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    display: block;
-    height: 55px;
-    width: 100%;
-    overflow: hidden; }
-    .global-nav__icon--about {
-      background-image: url("../../images/global-nav/about.png"); }
-    .global-nav__icon--content {
-      background-image: url("../../images/global-nav/content.png"); }
-    .global-nav__icon--speaker {
-      background-image: url("../../images/global-nav/speaker.png"); }
-    .global-nav__icon--timeline {
-      background-image: url("../../images/global-nav/timeline.png"); }
-    .global-nav__icon--location {
-      background-image: url("../../images/global-nav/location.png"); }
-    .global-nav__icon--contact {
-      background-image: url("../../images/global-nav/contact.png"); }
+    width: 104px;
+    line-height: 1; }
+  .global-nav .icon {
+    height: 60px;
+    width: 60px; }
   .global-nav a {
     background-color: #000;
     color: #fff;
@@ -169,9 +201,12 @@ p {
     font-weight: normal;
     margin: 0 0 20px;
     text-align: center; }
-    .section__title img {
-      display: block;
-      margin: 0 auto 10px; }
+    .section__title .icon {
+      background-color: #0d337a;
+      border-radius: 100%;
+      margin-bottom: 10px;
+      height: 80px;
+      width: 80px; }
   .section__content {
     background-color: #F9F9F9;
     padding: 80px; }
@@ -287,42 +322,6 @@ p {
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%); }
-
-.person {
-  background-size: cover;
-  background-position: 50% 50%;
-  display: inline-block;
-  height: 35px;
-  width: 35px;
-  overflow: hidden;
-  border-radius: 100%; }
-
-.person-conti {
-  background-image: url("../../images/speakers/conti.jpg"); }
-
-.person-fukazawa {
-  background-image: url("../../images/speakers/fukazawa.jpg"); }
-
-.person-hide {
-  background-image: url("../../images/speakers/hide.png"); }
-
-.person-ishikawa {
-  background-image: url("../../images/speakers/ishikawa.jpg"); }
-
-.person-kitajima {
-  background-image: url("../../images/speakers/kitajima.jpg"); }
-
-.person-mignon {
-  background-image: url("../../images/speakers/mignon.png"); }
-
-.person-moriyama {
-  background-image: url("../../images/speakers/moriyama.jpg"); }
-
-.person-oohara {
-  background-image: url("../../images/speakers/oohara.jpg"); }
-
-.person-torounit {
-  background-image: url("../../images/speakers/torounit.png"); }
 
 .timeline__body {
   overflow: hidden; }

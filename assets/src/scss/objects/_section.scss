@@ -8,9 +8,12 @@
 		margin: 0 0 20px;
 		text-align: center;
 		
-		img {
-			display: block;
-			margin: 0 auto 10px;
+		.icon {
+			background-color: #0d337a;
+			border-radius: 100%;
+			margin-bottom: 10px;
+			height: 80px;
+			width: 80px;
 		}
 	}
 	
