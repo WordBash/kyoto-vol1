@@ -244,20 +244,25 @@ p {
   .points__item {
     margin-bottom: 30px; }
 
-.content-item__media {
-  margin: 0 0 2rem;
-  text-align: center; }
-
-.content-item__title {
-  font-size: 2.1rem;
-  font-weight: bold;
-  margin: 0 0 1rem;
-  text-align: center; }
-
-.content-item__body {
-  font-size: 1.6rem; }
-  .content-item__body :last-child {
+.content-item {
+  margin-bottom: 2rem; }
+  .content-item:last-child {
     margin-bottom: 0; }
+  @media (min-width: 992px) {
+    .content-item {
+      margin-bottom: 0; } }
+  .content-item__media {
+    margin: 0 0 2rem;
+    text-align: center; }
+  .content-item__title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 0 0 1rem;
+    text-align: center; }
+  .content-item__body {
+    font-size: 1.6rem; }
+    .content-item__body :last-child {
+      margin-bottom: 0; }
 
 .speakers .row {
   margin-right: -5px;

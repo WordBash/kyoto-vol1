@@ -3,6 +3,16 @@
 }
 
 .content-item {
+	margin-bottom: 2rem;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	@include bp-min($screen-md-min) {
+		margin-bottom: 0;
+	}
+	
 	&__media {
 		margin: 0 0 2rem;
 		text-align: center;
