@@ -12,11 +12,9 @@ env:
   secure: "OFxgY1xaOuvqqwUemLELv/jYsXxJEd8vP7RJS7aXxrNSNMr2j08RtkxzRyq/PHOiLrABWPEFl/b9UEy4iQ9dLoH2cLK/nAiA4zC98QK5Fu2bJbsbpuzGVYkMV3QWL7ZipPq9WKGZMaUE1Hv1XzKOnrdUZK+sZNY3EPB7E83+jzojE3/yqHlf+bG0vv9DFUmUN16vmAN8sP6FPuAs+zSe+SuMLOvF1+q4kcsirdBz53tJEyciEwyk7pNN36nC82vP200gJ3O8HNgmV85ts4SSU8SPGSnwZIf5becjTn1XiAf9P0KSmOGBmk5kAu64QRChb0bFGXWBFNj0vlmkj6xnylOKFPv0kEIIUtXichL7R4vhpxV9Vhq1ZuFoG4Jtwm5blD67AlYkRPN6kRJwqSwlMZeOfHZ0KO8h8G5gVOidozQFJHiOqYxztyuZ/DjJVyKcU8HRn1pL76fYt13kRced7g+5wVD5+DVoNARPRiQaemwrSYZwukFWpy7c9NvNZevBl166WhPoAVdrLvnnBkJpzJevbqC6hCedB7VEMauozpc1TZ5aVQs+WCF/1bv6Zh+RQz87UUqtegBJ9IYk8Elmy2mE9lnCZxT5o6HUiX4LozMAujtFcvEzXI/n3cO287XP4K823uInXTHQo4KHrpwpT9PdaKb2tWTglnI07SbLYbw="
 
 before_script:
-  - nvm install 4.2
-  - npm install
   - git clone -b gh-pages --quiet https://github.com/WordBash/kyoto-vol1.git gh-pages
 script:
-  - npm run release
+  - ls index.html
 
 after_success:
   - cd gh-pages
