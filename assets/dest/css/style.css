@@ -488,24 +488,34 @@ p {
   padding-left: 20px; }
 
 .location__item {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   overflow: hidden; }
+  @media (min-width: 992px) {
+    .location__item {
+      margin-bottom: 1rem; } }
 
 .location__h {
   background-color: #0D337A;
   color: #fff;
-  float: left;
   font-size: 1.6rem;
   font-weight: normal;
-  margin-right: 10px;
-  text-align: center;
+  margin: 0 auto 0.5rem;
   padding: 5px;
-  width: 100px; }
+  width: 100px;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .location__h {
+      margin: 0 20px 0 0;
+      float: left; } }
 
 .location__d {
   font-size: 1.8rem;
-  padding-top: 3px;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .location__d {
+      padding-top: 3px;
+      text-align: left; } }
 
 .location__date small {
   font-size: 1.4rem; }

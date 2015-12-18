@@ -5,26 +5,39 @@
 	}
 	
 	&__item {
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		overflow: hidden;
+		
+		@include bp-min($screen-md-min) {
+			margin-bottom: 1rem;
+		}
 	}
 	
 	&__h {
 		background-color: #0D337A;
 		color: #fff;
-		float: left;
 		font-size: 1.6rem;
 		font-weight: normal;
-		margin-right: 10px;
-		text-align: center;
+		margin: 0 auto 0.5rem;
 		padding: 5px;
 		width: 100px;
+		text-align: center;
+		
+		@include bp-min($screen-md-min) {
+			margin: 0 20px 0 0;
+			float: left;
+		}
 	}
 	
 	&__d {
 		font-size: 1.8rem;
-		padding-top: 3px;
 		overflow: hidden;
+		text-align: center;
+		
+		@include bp-min($screen-md-min) {
+			padding-top: 3px;
+			text-align: left;
+		}
 	}
 	
 	&__date {
