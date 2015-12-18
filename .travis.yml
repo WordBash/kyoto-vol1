@@ -1,4 +1,6 @@
 language: node_js
+sudo: false
+
 node_js:
   - "4.2"
 
@@ -13,7 +15,7 @@ env:
 before_script:
   - git clone -b gh-pages --quiet https://github.com/WordBash/kyoto-vol1.git gh-pages
 script:
-  - ls index.html
+  - npm run release
 
 after_success:
   - cd gh-pages
