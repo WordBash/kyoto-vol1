@@ -1,20 +1,22 @@
 .speakers {
-	.row {
-		margin-right: -5px;
-		margin-left: -5px;
-		display: flex;
-		flex-wrap: wrap;
-		
-		> div {
-			padding-right: 5px;
-			padding-left: 5px;
-			flex-grow: 1;
-			flex-basis: 33.33333%;
+	@include bp-min($screen-md-min) {
+		.row {
+			margin-right: -5px;
+			margin-left: -5px;
 			display: flex;
-		}
-		
-		:nth-child(3n+1) {
-			clear: both;;
+			flex-wrap: wrap;
+			
+			> div {
+				padding-right: 5px;
+				padding-left: 5px;
+				flex-grow: 1;
+				flex-basis: 33.33333%;
+				display: flex;
+			}
+			
+			:nth-child(3n+1) {
+				clear: both;;
+			}
 		}
 	}
 }
