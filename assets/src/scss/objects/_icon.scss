@@ -1,0 +1,78 @@
+.icon {
+	height: 80px;
+	width: 80px;
+	background-size: cover;
+	background-position: 50% 50%;
+	display: inline-block;
+	overflow: hidden;
+	
+	&--about {
+		background-image: url( '../../images/icon/about.svg' );
+	}
+	
+	&--content {
+		background-image: url( '../../images/icon/content.svg' );
+	}
+	
+	&--speaker {
+		background-image: url( '../../images/icon/speaker.svg' );
+	}
+	
+	&--timeline {
+		background-image: url( '../../images/icon/timeline.svg' );
+	}
+	
+	&--location {
+		background-image: url( '../../images/icon/location.svg' );
+	}
+	
+	&--contact {
+		background-image: url( '../../images/icon/contact.svg' );
+	}
+}
+
+.person {
+	background-size: cover;
+	background-position: 50% 50%;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	overflow: hidden;
+	border-radius: 100%;
+
+	&--conti {
+		background-image: url( '../../images/speakers/conti.jpg' );
+	}
+
+	&--fukazawa {
+		background-image: url( '../../images/speakers/fukazawa.jpg' );
+	}
+
+	&--hide {
+		background-image: url( '../../images/speakers/hide.png' );
+	}
+
+	&--ishikawa {
+		background-image: url( '../../images/speakers/ishikawa.jpg' );
+	}
+
+	&--kitajima {
+		background-image: url( '../../images/speakers/kitajima.jpg' );
+	}
+
+	&--mignon {
+		background-image: url( '../../images/speakers/mignon.png' );
+	}
+
+	&--moriyama {
+		background-image: url( '../../images/speakers/moriyama.jpg' );
+	}
+
+	&--oohara {
+		background-image: url( '../../images/speakers/oohara.jpg' );
+	}
+
+	&--torounit {
+		background-image: url( '../../images/speakers/torounit.png' );
+	}
+}

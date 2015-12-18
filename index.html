@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!--[if lt IE 9]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="http://habakiri.2inc.org/wp-content/themes/habakiri/js/html5shiv.min.js"></script>
 	<![endif]-->
 	<title>WordBash Kyoto</title>
 	
@@ -19,12 +19,10 @@
 			
 	<meta property="twitter:card" content="summary" />
 	<meta property="twitter:site" content="@inc2734" />
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./assets/dest/css/style.css" />
-
+	<link rel="stylesheet" href="./assets/dest/css/style.min.css" />
 </head>
 <body>
 <div id="container">
@@ -34,61 +32,61 @@
 				<ul class="global-nav__list">
 					<li class="global-nav__item">
 						<a href="#about">
-							<i class="global-nav__icon global-nav__icon--about"></i>
+							<i class="icon icon--about"></i><br />
 							ABOUT
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#content">
-							<i class="global-nav__icon global-nav__icon--content"></i>
+							<i class="icon icon--content"></i><br />
 							CONTENT
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#speaker">
-							<i class="global-nav__icon global-nav__icon--speaker"></i>
+							<i class="icon icon--speaker"></i><br />
 							SPEAKER
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#timeline">
-							<i class="global-nav__icon global-nav__icon--timeline"></i>
+							<i class="icon icon--timeline"></i><br />
 							TIMELINE
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#location">
-							<i class="global-nav__icon global-nav__icon--location"></i>
+							<i class="icon icon--location"></i><br />
 							LOCATION
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#contact">
-							<i class="global-nav__icon global-nav__icon--contact"></i>
+							<i class="icon icon--contact"></i><br />
 							CONTACT
 						</a>
 					</li>
 				</ul>
 			</div>
+		</div>
 			
-			<div class="main-visual">
-				<div class="main-visual__inner">
-					<h1 class="main-visual__logo"><img src="./assets/dest/images/main-visual/logo.png"
-					                                   alt="WordBash Kyoto" /></h1>
-					<h2 class="main-visual__copy">キャッチコピーが入ります。</h2>
-					<div class="main-visual__date">
-						2016/1/23 <small>(sat)</small> 13:30 - 20:00
-					</div>
-					<div class="main-visual__price">
-						参加費: <strong>0,000</strong>円
-					</div>
-					<div class="main-visual__place">
-						会場：京都コワーキングスペース coto
-					</div>
-					
-					<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/" target="_blank">参加登録</a>
+		<div class="main-visual container">
+			<div class="main-visual__inner">
+				<h1 class="main-visual__logo"><img src="./assets/images/main-visual/logo.png" alt="WordBash Kyoto" /></h1>
+				<h2 class="main-visual__copy">キャッチコピーが入ります。</h2>
+				<div class="main-visual__date">
+					2016/1/23 <small>(sat)</small> 13:30 - 20:00
 				</div>
+				<div class="main-visual__price">
+					参加費: <strong>0,000</strong>円
+				</div>
+				<div class="main-visual__place">
+					会場：京都コワーキングスペース coto
+				</div>
+				
+				<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/" target="_blank">参加登録</a>
 			</div>
+		</div>
 		</div>
 	</header>
 	
@@ -96,7 +94,7 @@
 		<article class="container">
 			<section id="about" class="section about">
 				<h1 class="section__title">
-					<img src="./assets/dest/images/about/icon.png" alt="" />
+					<i class="icon icon--about"></i><br />
 					ABOUT WORDBASH
 				</h1>
 				<div class="section__content">
@@ -155,7 +153,7 @@
 			
 			<section id="content" class="section content">
 				<h1 class="section__title">
-					<img src="./assets/dest/images/content/icon.png" alt="" />
+					<i class="icon icon--content"></i><br />
 					CONTENT
 				</h1>
 				<div class="section__content">
@@ -163,7 +161,7 @@
 						<div class="col-md-6">
 							<section class="content-item">
 								<div class="content-item__media">
-									<img src="./assets/dest/images/content/speaker.jpg" alt="" />
+									<img src="./assets/images/content/speaker.jpg" alt="" />
 								</div>
 								<h1 class="content-item__title">個性豊かなスピーカーによるトーク＆セッション</h1>
 								<div class="content-item__body">
@@ -174,7 +172,7 @@
 						<div class="col-md-6">
 							<section class="content-item">
 								<div class="content-item__media">
-									<img src="./assets/dest/images/content/meal.jpg" alt="" />
+									<img src="./assets/images/content/meal.jpg" alt="" />
 								</div>
 								<h1 class="content-item__title">自分のペースで楽しめる立食形式</h1>
 								<div class="content-item__body">
@@ -188,15 +186,14 @@
 			
 			<section id="speaker" class="section speakers">
 				<h1 class="section__title">
-					<img src="./assets/dest/images/speakers/icon.png" alt="" />
+					<i class="icon icon--speaker"></i><br />
 					SPEAKER
 				</h1>
 				<div class="row">
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/e2aba047ee1042d24027d960cd37d938?s=340"
-								     alt="" class="avatar">
+								<i class="person person--ishikawa"></i>
 							</div>
 							<h1 class="speaker__name">石川栄和</h1>
 							<div class="speaker__badges">
@@ -220,8 +217,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/341f9bfd1ef3b1f5f08eddac252f8c5f?s=340"
-								     alt="" class="avatar">
+								<i class="person person--kitajima"></i>
 							</div>
 							<h1 class="speaker__name">キタジマタカシ</h1>
 							<div class="speaker__badges">
@@ -243,8 +239,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/e03953e0c18d776fead147601fdc3899?s=340"
-								     alt="" class="avatar">
+								<i class="person person--torounit"></i>
 							</div>
 							<h1 class="speaker__name">Toro_Unit</h1>
 							<div class="speaker__badges">
@@ -267,8 +262,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/1a859fa75dfe740285ea10c18c574749?s=340"
-								     alt="" class="avatar">
+								<i class="person person--mignon"></i>
 							</div>
 							<h1 class="speaker__name">Mignon Style</h1>
 							<div class="speaker__badges">
@@ -291,8 +285,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/79294868a241e80ea4fda34c618b8a11?s=340"
-								     alt="" class="avatar">
+								<i class="person person--moriyama"></i>
 							</div>
 							<h1 class="speaker__name">森山まゆこ</h1>
 							<div class="speaker__badges">
@@ -314,8 +307,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/bbfc276088051356a5967389b705148e?s=340"
-								     alt="" class="avatar">
+								<i class="person person--conti"></i>
 							</div>
 							<h1 class="speaker__name">コンチ</h1>
 							<div class="speaker__badges">
@@ -339,8 +331,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/75486cbfd37125f121cf4a6c5614601c?s=340"
-								     alt="" class="avatar">
+								<i class="person person--hide"></i>
 							</div>
 							<h1 class="speaker__name">hide</h1>
 							<div class="speaker__badges">
@@ -363,8 +354,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/21a5bc627ca0f66c8e3bccbd18aefc44?s=340"
-								     alt="" class="avatar">
+								<i class="person person--fukazawa"></i>
 							</div>
 							<h1 class="speaker__name">深沢 幸治郎</h1>
 							<div class="speaker__badges">
@@ -387,8 +377,7 @@
 					<div class="col-md-4">
 						<section class="speaker">
 							<div class="speaker__media">
-								<img src="https://www.gravatar.com/avatar/b955c1434967f046063c449d08d16a26?s=340"
-								     alt="" class="avatar">
+								<i class="person person--oohara"></i>
 							</div>
 							<h1 class="speaker__name">おおはらかずき</h1>
 							<div class="speaker__badges">
@@ -412,7 +401,7 @@
 			
 			<section id="timeline" class="section timeline">
 				<h1 class="section__title">
-					<img src="./assets/dest/images/timeline/icon.png" alt="" />
+					<i class="icon icon--timeline"></i><br />
 					TIMELINE
 				</h1>
 				<div class="timeline__body">
@@ -426,7 +415,7 @@
 							<section class="session__division">
 								<h1 class="session__title">13:00 - 13:20 テーマセッション</h1>
 								<div class="session__media">
-									<i class="person person-mignon"></i>
+									<i class="person person--mignon"></i>
 								</div>
 								<div class="session__body">
 									セッションタイトル
@@ -442,17 +431,17 @@
 									</ul>
 								</div>
 								<div class="session__mc">
-									<i class="person person-torounit"></i>
+									<i class="person person--torounit"></i>
 								</div>
 								<div class="session__paneler">
-									<i class="person person-conti"></i>
-									<i class="person person-fukazawa"></i>
-									<i class="person person-hide"></i>
-									<i class="person person-ishikawa"></i>
-									<i class="person person-kitajima"></i>
-									<i class="person person-mignon"></i>
-									<i class="person person-moriyama"></i>
-									<i class="person person-oohara"></i>
+									<i class="person person--conti"></i>
+									<i class="person person--fukazawa"></i>
+									<i class="person person--hide"></i>
+									<i class="person person--ishikawa"></i>
+									<i class="person person--kitajima"></i>
+									<i class="person person--mignon"></i>
+									<i class="person person--moriyama"></i>
+									<i class="person person--oohara"></i>
 								</div>
 							</section>
 						</div>
@@ -462,7 +451,7 @@
 							<section class="session__division">
 								<h1 class="session__title">14:30 - 14:50 運用系セッション</h1>
 								<div class="session__media">
-									<i class="person person-oohara"></i>
+									<i class="person person--oohara"></i>
 								</div>
 								<div class="session__body">
 									セッション名
@@ -498,7 +487,7 @@
 							<section class="session__division">
 								<h1 class="session__title">17:10 - 17:35 プラグインセッション</h1>
 								<div class="session__media">
-									<i class="person person-torounit"></i>
+									<i class="person person--torounit"></i>
 								</div>
 								<div class="session__body">
 									Hello Kushimotoで学ぶオブジェクト指向
@@ -533,7 +522,7 @@
 							<section class="session__division">
 								<h1 class="session__title">18:05 - 18:15 フリーセッション</h1>
 								<div class="session__media">
-									<i class="person person-kitajima"></i>
+									<i class="person person--kitajima"></i>
 								</div>
 								<div class="session__body">
 									セッションタイトル
@@ -542,7 +531,7 @@
 							<section class="session__division">
 								<h1 class="session__title">18:15 - 18:30 フリーセッション</h1>
 								<div class="session__media">
-									<i class="person person-ishikawa"></i>
+									<i class="person person--ishikawa"></i>
 								</div>
 								<div class="session__body">
 									セッションタイトル
@@ -570,7 +559,7 @@
 			
 			<section id="location" class="section location">
 				<h1 class="section__title">
-					<img src="./assets/dest/images/location/icon.png" alt="" />
+					<i class="icon icon--location"></i><br />
 					LOCATION
 				</h1>
 				<div class="section__content">
@@ -580,7 +569,7 @@
 								<dt class="location__h">開催日時</dt>
 								<dd class="location__d">
 									<div class="location__date">
-										<time datetime="2016-01-23">2016/1/23 <small>( sat )</small></time>
+										2016/1/23 <small>( sat )</small>
 									</div>
 									<div class="location__time">
 										13:30 - 20:00 ( 12:30 開場 )
@@ -614,7 +603,7 @@
 							</dl>
 						</div>
 						<div class="col-md-4">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.731325473827!2d135.75318361522176!3d34.98839398036156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108a63eb5cd4f%3A0x2daddb15eadb0799!2z5Lqs6YO944Kz44Ov44O844Kt44Oz44Kw44K544Oa44O844K5Y290b-OAkOOCs-ODiOOAkQ!5e0!3m2!1sja!2sjp!4v1450339150185" width="800" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.731325473827!2d135.75318361522176!3d34.98839398036156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108a63eb5cd4f%3A0x2daddb15eadb0799!2z5Lqs6YO944Kz44Ov44O844Kt44Oz44Kw44K544Oa44O844K5Y290b-OAkOOCs-ODiOOAkQ!5e0!3m2!1sja!2sjp!4v1450339150185" width="800" height="350" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
@@ -622,7 +611,7 @@
 			
 			<div id="contact" class="section contact">
 				<div class="contact__message">
-					<img src="./assets/dest/images/contact/message.png" alt="メンバー一同、お待ちしてます！" />
+					<img src="./assets/images/contact/message.png" alt="メンバー一同、お待ちしてます！" />
 				</div>
 				<div class="contact__btn">
 					<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/" target="_blank">参加登録</a>
@@ -651,15 +640,12 @@
 	</footer>
 	
 	<div class="pagetop">
-		<a href="#container"><img src="./assets/dest/images/pagetop.png" alt="Topへ" /></a>
+		<a href="#container"><img src="./assets/images/pagetop.png" alt="Topへ" /></a>
 	</div>
 <!-- end #container --></div>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="./assets/dest/js/app.js"></script>
+<script src="./assets/vendor/jquery/jquery-1.11.3.min.js"></script>
+<script src="./assets/vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
+<script src="./assets/dest/js/app.min.js"></script>
 </body>
 </html>

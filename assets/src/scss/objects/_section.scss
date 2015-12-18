@@ -8,14 +8,21 @@
 		margin: 0 0 20px;
 		text-align: center;
 		
-		img {
-			display: block;
-			margin: 0 auto 10px;
+		.icon {
+			background-color: #0d337a;
+			border-radius: 100%;
+			margin-bottom: 10px;
+			height: 80px;
+			width: 80px;
 		}
 	}
 	
 	&__content {
 		background-color: #F9F9F9;
-		padding: 80px;
+		padding: 30px 20px;
+		
+		@include bp-min($screen-md-min) {
+			padding: 80px;
+		}
 	}
 }

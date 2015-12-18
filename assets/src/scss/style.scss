@@ -1,4 +1,14 @@
 /* ========================================
+ * variables
+ ======================================= */
+@import 'variables/break-points';
+
+/* ========================================
+ * mixins
+ ======================================= */
+@import 'mixins/break-points';
+
+/* ========================================
  * foundation
  ======================================= */
 @import 'foundation/base';
@@ -13,6 +23,7 @@
  * objects
  ======================================= */
 @import 'objects/wp-badge';
+@import 'objects/icon';
 @import 'objects/btn';
 @import 'objects/global-nav';
 @import 'objects/main-visual';
