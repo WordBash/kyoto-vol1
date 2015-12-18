@@ -10,31 +10,31 @@
 	
 	&--speaker {
 		&:before {
-			background-image: url( '../../images/wp-badges/speaker.png' );
+			background-image: url( '../images/wp-badges/speaker.png' );
 		}
 	}
 	
 	&--community {
 		&:before {
-			background-image: url( '../../images/wp-badges/community.png' );
+			background-image: url( '../images/wp-badges/community.png' );
 		}
 	}
 	
 	&--theme {
 		&:before {
-			background-image: url( '../../images/wp-badges/theme.png' );
+			background-image: url( '../images/wp-badges/theme.png' );
 		}
 	}
 	
 	&--plugin {
 		&:before {
-			background-image: url( '../../images/wp-badges/plugin.png' );
+			background-image: url( '../images/wp-badges/plugin.png' );
 		}
 	}
 	
 	&--translation {
 		&:before {
-			background-image: url( '../../images/wp-badges/translation.png' );
+			background-image: url( '../images/wp-badges/translation.png' );
 		}
 	}
 }

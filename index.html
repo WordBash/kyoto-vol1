@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!--[if lt IE 9]>
-	<script src="http://habakiri.2inc.org/wp-content/themes/habakiri/js/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 	<title>WordBash Kyoto</title>
 	
@@ -19,10 +19,12 @@
 			
 	<meta property="twitter:card" content="summary" />
 	<meta property="twitter:site" content="@inc2734" />
-	
-	<link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./assets/dest/css/style.min.css" />
+	<link rel="stylesheet" href="./assets/dest/css/style.css" />
+
 </head>
 <body>
 <div id="container">
@@ -71,7 +73,8 @@
 			
 			<div class="main-visual">
 				<div class="main-visual__inner">
-					<h1 class="main-visual__logo"><img src="./assets/images/main-visual/logo.png" alt="WordBash Kyoto" /></h1>
+					<h1 class="main-visual__logo"><img src="./assets/dest/images/main-visual/logo.png"
+					                                   alt="WordBash Kyoto" /></h1>
 					<h2 class="main-visual__copy">キャッチコピーが入ります。</h2>
 					<div class="main-visual__date">
 						2016/1/23 <small>(sat)</small> 13:30 - 20:00
@@ -93,7 +96,7 @@
 		<article class="container">
 			<section id="about" class="section about">
 				<h1 class="section__title">
-					<img src="./assets/images/about/icon.png" alt="" />
+					<img src="./assets/dest/images/about/icon.png" alt="" />
 					ABOUT WORDBASH
 				</h1>
 				<div class="section__content">
@@ -152,7 +155,7 @@
 			
 			<section id="content" class="section content">
 				<h1 class="section__title">
-					<img src="./assets/images/content/icon.png" alt="" />
+					<img src="./assets/dest/images/content/icon.png" alt="" />
 					CONTENT
 				</h1>
 				<div class="section__content">
@@ -160,7 +163,7 @@
 						<div class="col-md-6">
 							<section class="content-item">
 								<div class="content-item__media">
-									<img src="./assets/images/content/speaker.jpg" alt="" />
+									<img src="./assets/dest/images/content/speaker.jpg" alt="" />
 								</div>
 								<h1 class="content-item__title">個性豊かなスピーカーによるトーク＆セッション</h1>
 								<div class="content-item__body">
@@ -171,7 +174,7 @@
 						<div class="col-md-6">
 							<section class="content-item">
 								<div class="content-item__media">
-									<img src="./assets/images/content/meal.jpg" alt="" />
+									<img src="./assets/dest/images/content/meal.jpg" alt="" />
 								</div>
 								<h1 class="content-item__title">自分のペースで楽しめる立食形式</h1>
 								<div class="content-item__body">
@@ -185,7 +188,7 @@
 			
 			<section id="speaker" class="section speakers">
 				<h1 class="section__title">
-					<img src="./assets/images/speakers/icon.png" alt="" />
+					<img src="./assets/dest/images/speakers/icon.png" alt="" />
 					SPEAKER
 				</h1>
 				<div class="row">
@@ -400,7 +403,7 @@
 			
 			<section id="timeline" class="section timeline">
 				<h1 class="section__title">
-					<img src="./assets/images/timeline/icon.png" alt="" />
+					<img src="./assets/dest/images/timeline/icon.png" alt="" />
 					TIMELINE
 				</h1>
 				<div class="timeline__body">
@@ -558,7 +561,7 @@
 			
 			<section id="location" class="section location">
 				<h1 class="section__title">
-					<img src="./assets/images/location/icon.png" alt="" />
+					<img src="./assets/dest/images/location/icon.png" alt="" />
 					LOCATION
 				</h1>
 				<div class="section__content">
@@ -568,7 +571,7 @@
 								<dt class="location__h">開催日時</dt>
 								<dd class="location__d">
 									<div class="location__date">
-										2016/1/23 <small>( sat )</small>
+										<time datetime="2016-01-23">2016/1/23 <small>( sat )</small></time>
 									</div>
 									<div class="location__time">
 										13:30 - 20:00 ( 12:30 開場 )
@@ -610,7 +613,7 @@
 			
 			<div id="contact" class="section contact">
 				<div class="contact__message">
-					<img src="./assets/images/contact/message.png" alt="メンバー一同、お待ちしてます！" />
+					<img src="./assets/dest/images/contact/message.png" alt="メンバー一同、お待ちしてます！" />
 				</div>
 				<div class="contact__btn">
 					<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/" target="_blank">参加登録</a>
@@ -639,12 +642,15 @@
 	</footer>
 	
 	<div class="pagetop">
-		<a href="#container"><img src="./assets/images/pagetop.png" alt="Topへ" /></a>
+		<a href="#container"><img src="./assets/dest/images/pagetop.png" alt="Topへ" /></a>
 	</div>
 <!-- end #container --></div>
 
-<script src="./assets/vendor/jquery/jquery-1.11.3.min.js"></script>
-<script src="./assets/vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
-<script src="./assets/dest/js/app.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="./assets/dest/js/app.js"></script>
 </body>
 </html>
