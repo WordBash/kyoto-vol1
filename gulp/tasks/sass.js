@@ -49,8 +49,5 @@ gulp.task('sass:dist', function () {
 	gulp.src(config.sass.src)
 			.pipe(sass())
 			.pipe(postcss(processors))
-			.pipe(rename({
-				extname: ".min.css"
-			}))
 			.pipe(gulp.dest(config.sass.dest));
 });

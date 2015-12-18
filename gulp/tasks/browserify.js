@@ -61,8 +61,5 @@ gulp.task('browserify:dist', function () {
 		.pipe(source(config.browserify.filename))
 		.pipe(buffer())
 		.pipe(uglify())
-		.pipe(rename({
-			extname: ".min.js"
-		}))
 		.pipe(gulp.dest(config.browserify.dest));
 });
