@@ -17,7 +17,15 @@ jQuery( function( $ ) {
 			update();
 		} );
 		
+		$( window ).resize( function() {
+			update();
+		} );
+		
 		function update() {
+			if ( pagetop.css( 'display' ) == 'none' ) {
+				return;
+			}
+			
 			var scroll      = $( window ).scrollTop();
 			var pagetop_top = scroll / slowly - default_top;
 			

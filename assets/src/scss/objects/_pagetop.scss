@@ -1,6 +1,11 @@
 .pagetop {
+	display: none;
 	position: fixed;
 	right: 10px;
 	top: -300px;
-	z-index: 2;
+	
+	@include bp-min($screen-md-min) {
+		display: block;
+		z-index: 2;
+	}
 }

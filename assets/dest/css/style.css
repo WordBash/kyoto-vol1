@@ -573,7 +573,11 @@ p {
   text-align: center; }
 
 .pagetop {
+  display: none;
   position: fixed;
   right: 10px;
-  top: -300px;
-  z-index: 2; }
+  top: -300px; }
+  @media (min-width: 992px) {
+    .pagetop {
+      display: block;
+      z-index: 2; } }
