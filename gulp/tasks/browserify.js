@@ -52,12 +52,12 @@ gulp.task('browserify', function () {
 		var bundler = watchify(b);
 		bundler.on('update', bundle);
 	}
-	bundle();
+	return bundle();
 });
 
 gulp.task('browserify:dist', function () {
 
-	b.bundle()
+	return b.bundle()
 		.pipe(source(config.browserify.filename))
 		.pipe(buffer())
 		.pipe(uglify())

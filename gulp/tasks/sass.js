@@ -32,7 +32,7 @@ var processors = [
 
 gulp.task('sass', function () {
 
-	gulp.src(config.sass.src)
+	return gulp.src(config.sass.src)
 			.pipe(plumber())
 			.pipe(sourcemaps.init())
 			.pipe(sass())
@@ -46,8 +46,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:dist', function () {
-	gulp.src(config.sass.src)
+	return gulp.src(config.sass.src)
 			.pipe(sass())
 			.pipe(postcss(processors))
+			.pipe(minifyCss())
 			.pipe(gulp.dest(config.sass.dest));
 });
