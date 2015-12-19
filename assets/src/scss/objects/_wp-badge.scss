@@ -1,40 +1,57 @@
 .wp-badge {
+	display: inline-block;
+	height: 26px;
+	width: 26px;
+	line-height: 26px;
+	font-size: 16px;
+	font-family: 'dashicons';
+	font-style: normal;
+	color: #FFF;
+	border-radius: 50%;
+	overflow: hidden;
+	vertical-align: top;
+
 	&:before {
 		content: '';
-		display: inline-block;
-		height: 26px;
-		width: 26px;
-		overflow: hidden;
-		vertical-align: top;
 	}
 	
 	&--speaker {
+		background-color: #F7AD43;
 		&:before {
-			background-image: url( '../images/wp-badges/speaker.png' );
+			content: "\f488";
+			//background-image: url( '../images/wp-badges/speaker.png' );
 		}
 	}
 	
 	&--community {
+		background-color: #11799d;
 		&:before {
-			background-image: url( '../images/wp-badges/community.png' );
+			content: "\f307";
+			//background-image: url( '../images/wp-badges/community.png' );
 		}
 	}
 	
 	&--theme {
+		background-color: #4e3288;
 		&:before {
-			background-image: url( '../images/wp-badges/theme.png' );
+			content: "\f100";
+			//background-image: url( '../images/wp-badges/theme.png' );
 		}
 	}
 	
 	&--plugin {
+		background-color: #F06723;
 		&:before {
-			background-image: url( '../images/wp-badges/plugin.png' );
+			content: "\f106";
+			//background-image: url( '../images/wp-badges/plugin.png' );
 		}
 	}
 	
 	&--translation {
+		background-color: #C32283;
 		&:before {
-			background-image: url( '../images/wp-badges/translation.png' );
+			content: "\f326";
+			//background-image: url( '../images/wp-badges/translation.png' );
 		}
 	}
 }
