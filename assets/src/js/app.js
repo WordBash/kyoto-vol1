@@ -6,7 +6,44 @@ jQuery( function( $ ) {
 	 * pagetop
 	 */
 	( function() {
+		var timer   = false;
+		var start   = 0;
 		var pagetop = $( '.pagetop' );
+		
+		$( window ).scroll( function() {
+			if ( timer !== false ) {
+				clearTimeout( timer );
+			}
+			var scroll = $( window ).scrollTop();
+			var pagetop_bottom = parseInt( pagetop.css( 'bottom' ) );
+			if ( scroll > start ) {
+				// 下にスクロール中
+				pagetop.css( 'transition', 'none' );
+				pagetop.css( 'bottom', pagetop_bottom + scroll - start );
+			} else if ( scroll < start ) {
+				// 上にスクロール中
+				pagetop.css( 'transition', 'none' );
+				pagetop.css( 'bottom', pagetop_bottom + scroll - start );
+			}
+			start = $( window ).scrollTop();
+			var timer = setTimeout( function() {
+				if ( scroll == start ) {
+					// 停止中
+					pagetop.css( 'transition', '' );
+					pagetop.css( 'bottom', 0 );
+				}
+			}, 200 );
+			
+			/*
+			if ( scroll > 0 ) {
+				pagetop.css( 'bottom', 0 );
+			} else {
+				pagetop.css( 'bottom', '' );
+			}
+			*/
+		} );
+		
+		/*
 		var default_top = parseInt( pagetop.css( 'top' ) ) * -1;
 		var slowly = 3;
 		var bottom = 10;
@@ -38,6 +75,7 @@ jQuery( function( $ ) {
 				pagetop.css( 'top', window_height - pagetop_height - bottom );
 			}
 		}
+		*/
 	} )();
 	
 	/**
@@ -74,7 +112,6 @@ jQuery( function( $ ) {
 		
 		function set_section_position() {
 			var item = $( '.timeline__item' );
-			console.log( item.css( 'float' ) );
 			if ( item.css( 'float' ) == 'none' ) {
 				item.css( 'margin-top', '' );
 				return;

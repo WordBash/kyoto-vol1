@@ -2,7 +2,8 @@
 	display: none;
 	position: fixed;
 	right: 10px;
-	top: -300px;
+	bottom: 100%;
+	transition: bottom 2s ease-out 0s;
 	animation-name: pagetop;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
