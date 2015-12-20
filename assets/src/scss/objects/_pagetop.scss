@@ -1,0 +1,27 @@
+.pagetop {
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 100%;
+	transition: bottom 2s ease-out 0s;
+	animation-name: pagetop;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	
+	@include bp-min($screen-md-min) {
+		display: block;
+		z-index: 2;
+	}
+}
+
+@keyframes pagetop {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(0, -10px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
