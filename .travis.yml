@@ -1,0 +1,21 @@
+language: node_js
+sudo: false
+node_js:
+- '4.2'
+env:
+  global:
+  - GIT_COMMITTER_NAME=torounit
+  - GIT_COMMITTER_EMAIL=mail@torounit.com
+  - GIT_AUTHOR_NAME=torounit
+  - GIT_AUTHOR_EMAIL=mail@torounit.com
+  - secure: pmyiVB6qOHhGZcAALLssmUnASzWnWIdLaOXPbjpyGtAe33NmYyzM+EWuX4cVgHAwK7Z6Vsp4bo9o329CIhsPFxidXgEeQkqAAnLdTBp7S10nhx1z03M8rukHmrVVJyNaIpxSbATcLQOzBVR0feLfClfcVYLC1f4F7ilxKbDGWqXO0HSjB8dvvzyQMF7zThvh2/Mx4SCdWDjtix7uEJK/htznGtGsM//Ozxy6kDjiuhjeypw2NKRCAEMNyRs163p5FUZfCPOf2wEg2ExS07pnfDHQjXMlhE0jWtLVAdQvKy47R3xm/NPRXfyfMCF7Sakm5u7PD58pEqF/lmQMOklD9h+vFHr+VyDZHzcGDeyPrM/mN/P1fSdXRkFYeuZWKN81axTLTPRdlLp1zOvUmkjncwG7av3608PadHrA15bkMZegFhyUtpb5cMvu7X2vOsMqUilbfX+nyHFKza0ewQfqVI3KcNctdi0pTVuenHrkoJU1H0fb6XamBOjHYOeHeG3nq75d9WWqX34y4rG0SHCWPdwnLdZYpM4IZpEZ+spy5HF1Swzxiqm1O/P9HOV4b9r8AhP7Q5k9oHsfBGNDqvNwUSvjf3Q0Yd80+wfaOxzwadcVbqPDzx5S7TDCMdAdzD97LYrX24X1H4ZJBG0b/FT1bNdxCWiZTIDGtuV3sMFV9uc=
+before_script:
+- git clone -b gh-pages --quiet https://github.com/WordBash/kyoto-vol1.git release
+script:
+- npm run release
+after_success:
+- cd release
+- git add -A
+- git commit -m 'Update from travis'
+- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/WordBash/kyoto-vol1.git
+  gh-pages 2> /dev/null'

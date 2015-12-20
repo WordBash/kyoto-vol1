@@ -5,26 +5,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!--[if lt IE 9]>
-	<script src="http://habakiri.2inc.org/wp-content/themes/habakiri/js/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
-	<title>WordBash Kyoto</title>
-	
-	<meta property="fb:app_id" content="" />
+	<title>WordBash Kyoto vol.1</title>
+
+	<meta property="fb:app_id" content="680076722129766" />
 	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:title" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:description" content="" />
-			
+	<meta property="og:site_name" content="WordBash" />
+	<meta property="og:image" content="./assets/dest/images/thum.png" />
+	<meta property="og:title" content="WordBash Kyoto vol1" />
+	<meta property="og:url" content="http://wordbash.github.io/kyoto-vol1/" />
+	<meta property="og:description" content="2016年1月23日京都で行われる一風変わったWordPressのイベント「WordBash Kyoto」のイベントページ" />
+
 	<meta property="twitter:card" content="summary" />
 	<meta property="twitter:site" content="@inc2734" />
-	
-	<link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./assets/dest/css/style.min.css" />
+	<link rel="stylesheet" href="https://s.w.org/wp-includes/css/dashicons.css?20150710">
+	<link rel="stylesheet" href="./assets/dest/css/style.css" />
 </head>
 <body>
+
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId  : '680076722129766',
+			xfbml  : true,
+			version: 'v2.5'
+		});
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+
 <div id="container">
 	<header id="header">
 		<div class="container">
@@ -32,64 +56,70 @@
 				<ul class="global-nav__list">
 					<li class="global-nav__item">
 						<a href="#about">
-							<i class="icon icon--about"></i><br />
-							ABOUT
+							<i class="icon icon--about"></i>
+							<span class="global-nav__item-label">ABOUT</span>
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#content">
-							<i class="icon icon--content"></i><br />
-							CONTENT
+							<i class="icon icon--content"></i>
+							<span class="global-nav__item-label">CONTENT</span>
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#speaker">
-							<i class="icon icon--speaker"></i><br />
-							SPEAKER
+							<i class="icon icon--speaker"></i>
+							<span class="global-nav__item-label">SPEAKER</span>
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#timeline">
-							<i class="icon icon--timeline"></i><br />
-							TIMELINE
+							<i class="icon icon--timeline"></i>
+							<span class="global-nav__item-label">TIMELINE</span>
 						</a>
 					</li>
 					<li class="global-nav__item">
 						<a href="#location">
-							<i class="icon icon--location"></i><br />
-							LOCATION
+							<i class="icon icon--location"></i>
+							<span class="global-nav__item-label">LOCATION</span>
 						</a>
 					</li>
 					<li class="global-nav__item">
-						<a href="#contact">
-							<i class="icon icon--contact"></i><br />
-							CONTACT
+                                          <a href="https://docs.google.com/forms/d/1UQdPfKzDGxu-NOL3ZuME7gsiLdoCmMYFrQKkcwaS3Lc/" target="blank">
+							<i class="icon icon--contact"></i>
+							<span class="global-nav__item-label">CONTACT</span>
+						</a>
+					</li>
+					<li class="global-nav__item">
+						<a href="https://wordbash.doorkeeper.jp/" target="_blank">
+							<i class="icon icon--entry"></i>
+							<span class="global-nav__item-label">ENTRY</span>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-			
-		<div class="main-visual container">
+
+		<div class="main-visual">
 			<div class="main-visual__inner">
-				<h1 class="main-visual__logo"><img src="./assets/images/main-visual/logo.png" alt="WordBash Kyoto" /></h1>
-				<h2 class="main-visual__copy">キャッチコピーが入ります。</h2>
+				<h1 class="main-visual__logo"><img src="./assets/dest/images/main-visual/logo.png" alt="WordBash Kyoto" /></h1>
+				<h2 class="main-visual__copy">～最初っからクライマックス？懇親会から始まるイベントはじめました～</h2>
 				<div class="main-visual__date">
 					2016/1/23 <small>(sat)</small> 13:30 - 20:00
 				</div>
 				<div class="main-visual__price">
-					参加費: <strong>0,000</strong>円
+					参加費: <strong>3,000</strong>円
 				</div>
 				<div class="main-visual__place">
 					会場：京都コワーキングスペース coto
 				</div>
-				
-				<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/" target="_blank">参加登録</a>
+
+				<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/events/36460" target="_blank">参加登録</a>
 			</div>
 		</div>
 		</div>
 	</header>
-	
+
 	<main id="main">
 		<article class="container">
 			<section id="about" class="section about">
@@ -98,9 +128,8 @@
 					ABOUT WORDBASH
 				</h1>
 				<div class="section__content">
-					<h2 class="about__line">「懇親会が本番？それ本番で聞かせてよ！」</h2>
-					<h3 class="about__subtitle">Web系のイベントに参加した時、「懇親会が本番だよ」と言われたことはありませんか？</h3>
-					
+					<h2 class="about__line">Web系のイベントに参加した時、「懇親会が本番だよ」と言われたことはありませんか？</h2>
+
 					<div class="row points">
 						<div class="col-md-4">
 							<div class="points__item">
@@ -123,26 +152,28 @@
 						<div class="col-md-4">
 							<div class="points__item">
 								<div class="points__body">
-									みんなで酒飲むの楽しいやん
+									座ってスライド読むだけならWebでもできるよね？<br/>
+									本編行くだけなら参加レポートと<br/>
+									後でアップされるスライド見るだけで十分
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="about__message">
 						<p>
-							出てくる表現は人それぞれですが、おおよそ「本編より発見があって面白い」というような内容じゃないでしょうか。<br />
-							そしてそんな話を聞かされて「そんなにいいなら本編でやってよ」と思ったことはないでしょうか？
+							勉強会に求めるものは人それぞれですが、多くのイベントで懇親会が本編と言われています。<br />
+							なぜこんな事が言われてしまうのかというと、やはり自分の言葉やレベルでコミュニケーションが取れるからではないでしょうか。<br />
+                                                        懇親会でつながった関係がイベントが終わった後も続き、人と人との繋がりから学ぶ事が多く日々の刺激になったからではないでしょうか。
 						</p>
 						<p>
-							<big>「懇親会で話しているような話を、本編としてみんなでワイガヤしながら話しちゃおう」</big>
+                                                  <big>「 聞きたい事を経験者に聞ける」「自分と同じ悩みを抱えた人繋がれる」</big>
+                                                        そんなイベントを今回WordBash京都として企画することにしました！<br />
 						</p>
 						<p>
-							そんなイベントとして、今回WordBash京都を企画することになりました！
-						</p>
-						<p>
-							懇親会に近い飲食ありの会場で、ちょっと異なるのは「話したいことはみんなの前で話す」ということ。<br />
-							プラグインやテーマ作者によるセッションだけでなく、オフレコ扱いになるかもしれないようなぶっちゃけ話が出てくるかもしれないパネルディスカッションタイムを用意し、より「生の声に近い話」を聞ける場としてイベントを開催します。
+							今回は懇親会のように食べながら、飲みながらセッションを聞くという形式で皆さんには参加していただきます。<br />
+                                                        プラグインやテーマ作者による真面目なセッションだけでなく、オフレコ扱いになるかもしれないような、現場の闇を知れるぶっちゃけ話が出てくるかもしれないパネルディスカッションタイムを用意し、より「生の声に近い話」を聞ける場としてイベントを開催します。<br />
+
 						</p>
 						<p>
 							普段は質問しづらい話でも、ビアバッシュの賑わいの中なら思い切って言っちゃえるかも？
@@ -150,7 +181,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section id="content" class="section content">
 				<h1 class="section__title">
 					<i class="icon icon--content"></i><br />
@@ -161,29 +192,45 @@
 						<div class="col-md-6">
 							<section class="content-item">
 								<div class="content-item__media">
-									<img src="./assets/images/content/speaker.jpg" alt="" />
+									<img src="./assets/dest/images/content/speaker.jpg" alt="" />
 								</div>
 								<h1 class="content-item__title">個性豊かなスピーカーによるトーク＆セッション</h1>
 								<div class="content-item__body">
-									説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+									東は東京、西は長崎。公式ディレクトリ掲載テーマ作者からコアコントリビューターにライターにWordBenchモデレーター。普段なかなか揃う機会の少ないだいぶ尖ったスピーカーによるオフレコスレスレなトークとセッションが聞けるイベントです。
 								</div>
 							</section>
 						</div>
 						<div class="col-md-6">
 							<section class="content-item">
 								<div class="content-item__media">
-									<img src="./assets/images/content/meal.jpg" alt="" />
+									<img src="./assets/dest/images/content/meal.jpg" alt="" />
 								</div>
-								<h1 class="content-item__title">自分のペースで楽しめる立食形式</h1>
+                                                                <h1 class="content-item__title">自分のペースで楽しめる立食形式</h1>
 								<div class="content-item__body">
-									説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。
+									「懇親会のような本編」というコンセプトのもと、座ってセッションを聞くだけのイベントではなく常に立食で軽食を楽しめるスタイルで準備しています。<br />
+                                                                         普段は聞きにくいような内容も直接聞けたり、初対面通しの人ととも盛り上げれるかも。
+								</div>
+
+							</section>
+						</div>
+						<div class="col-md-12">
+							<section class="content-item last">
+								<div class="content-item__media">
+                                                                  <img src="./assets/dest/images/content/group.jpg" alt="" />
+								</div>
+								<h1 class="content-item__title">興味の薄いセッションは抜けて良い自由な空間</h1>
+								<div class="content-item__body text-center">
+									勉強会というとセッションを全部聞かないと行けないような束縛感があるかもしれませんがこのイベントは違います。<br />
+                                                                        デザイナーが好む内容・プログラマーが好む内容それぞれの聞きたい話だけを聞いて頂いて結構です。<br />
+                                                                        セッションを抜けてる時は飲み物片手に話したい人通し集まって、気になってる話題に華を咲かして頂いて結構です。<br />
+                                                                        スピーカーもウロウロしてるので捕まえて聞きたいことをガッツリ聞いてみるのも出来ますよ。
 								</div>
 							</section>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 			<section id="speaker" class="section speakers">
 				<h1 class="section__title">
 					<i class="icon icon--speaker"></i><br />
@@ -198,19 +245,27 @@
 							<h1 class="speaker__name">石川栄和</h1>
 							<div class="speaker__badges">
 								<i class="wp-badge wp-badge--speaker"></i>
-								<i class="wp-badge wp-badge--community"></i>
 								<i class="wp-badge wp-badge--theme"></i>
 								<i class="wp-badge wp-badge--plugin"></i>
 								<i class="wp-badge wp-badge--translation"></i>
 							</div>
 							<div class="speaker__description">
-								株式会社ベクトル代表取締役。ウェブサイト制作やシステム開発をする傍ら初心者向け無料WordPressテーマ「BizVektor」を開発・配布しています。<br />
-								今年７月にはBootstrapベースのシンプルな新テーマ「Lightning」と、同時開発の多機能プラグイン「ExUnit」をWordPress公式ディレクトリで公開。<br />
-								2015年は主にスケボーブログを毎日書く事にリソースを裂いて各方面の業務に支障が出ていのですが、最近はスケボーブログすら毎日更新出来ないほど多方面で炎上中（2015/12/7現在）
+								株式会社ベクトル代表。初心者向け無料WordPressテーマ「BizVektor」や、Bootstrapベースのシンプルなテーマ「Lightning」＆同時開発の多機能プラグイン「ExUnit」をWordPress公式ディレクトリで公開。<br />
+								2015年はスケボーブログを毎日書く事にリソースを裂いていたが、最近はスケボーブログすら毎日更新出来ないほど多方面で炎上中（2015/12/7現在）
 							</div>
 							<div class="speaker__tweet">
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								テーマ開発の裏側・表側とか、キタジマさんが開発しているテーマ「Habakiri」と僕の開発している「Lightning」の何が違うかとか、そういうお話が出来ればと思っています。
+							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://twitter.com/kurudrive" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/kurudrive" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/kurudrive/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://ex-unit.vektor-inc.co.jp/ja/" target="_blank">http://ex-unit.vektor-inc.co.jp/ja/</a>
 							</div>
 						</section>
 					</div>
@@ -234,6 +289,17 @@
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								Habakiri やテーマ作成、アドオン販売について等を地方弱小フリーランサーの実情を交えながらお伝えできればなと思います。
 							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://twitter.com/inc2734" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://www.facebook.com/inc2734" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/inc2734" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/inc2734/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://2inc.org" target="_blank">http://2inc.org</a>
+							</div>
 						</section>
 					</div>
 					<div class="col-md-4">
@@ -244,9 +310,8 @@
 							<h1 class="speaker__name">Toro_Unit</h1>
 							<div class="speaker__badges">
 								<i class="wp-badge wp-badge--speaker"></i>
-								<i class="wp-badge wp-badge--community"></i>
-								<i class="wp-badge wp-badge--theme"></i>
 								<i class="wp-badge wp-badge--plugin"></i>
+								<i class="wp-badge wp-badge--code"></i>
 								<i class="wp-badge wp-badge--translation"></i>
 							</div>
 							<div class="speaker__description">
@@ -256,6 +321,17 @@
 							<div class="speaker__tweet">
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								プラグイン制作の辛い話とか、ちゃんとPHP書こうって話とか、オープンソースしようぜ的な話とかができればと。
+							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://twitter.com/Toro_Unit" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://www.facebook.com/torounit" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/torounit/" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/toro_unit" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://torounit.com" target="_blank">http://torounit.com</a>
 							</div>
 						</section>
 					</div>
@@ -280,6 +356,17 @@
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								ノンプログラミングのWebデザイナーがWordPressをはじめてから、テーマやプラグインを登録して今までに感じた事などをお話できればと思います。
 							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://twitter.com/mignon_style" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://www.facebook.com/mignonxstyle" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/mignonstyle" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/mignonstyle/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://mignonstyle.com/" target="_blank">http://mignonstyle.com/</a>
+							</div>
 						</section>
 					</div>
 					<div class="col-md-4">
@@ -289,9 +376,7 @@
 							</div>
 							<h1 class="speaker__name">森山まゆこ</h1>
 							<div class="speaker__badges">
-								<i class="wp-badge wp-badge--speaker"></i>
 								<i class="wp-badge wp-badge--community"></i>
-								<i class="wp-badge wp-badge--theme"></i>
 								<i class="wp-badge wp-badge--plugin"></i>
 								<i class="wp-badge wp-badge--translation"></i>
 							</div>
@@ -301,6 +386,16 @@
 							<div class="speaker__tweet">
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								WordPress は、つくってる人とつながったり自分も参加してみたらもっとおもしろい！ということを伝えてゆきたいです！
+							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="http://twitter.com/mayukojpn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/mayukojpn" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/mayukojpn/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://blog.mayuko.me" target="_blank">http://blog.mayuko.me</a>
 							</div>
 						</section>
 					</div>
@@ -312,10 +407,6 @@
 							<h1 class="speaker__name">コンチ</h1>
 							<div class="speaker__badges">
 								<i class="wp-badge wp-badge--speaker"></i>
-								<i class="wp-badge wp-badge--community"></i>
-								<i class="wp-badge wp-badge--theme"></i>
-								<i class="wp-badge wp-badge--plugin"></i>
-								<i class="wp-badge wp-badge--translation"></i>
 							</div>
 							<div class="speaker__description">
 								大阪でWebディレクタしてます。<br />
@@ -325,6 +416,16 @@
 							<div class="speaker__tweet">
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								個人的にWordPressの案件に関わることが多いのでノンプログラマからみたWordPressの苦労話、良い所をお話できればと思ってます。
+							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://twitter.com/maki_saki" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/contiki9" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/conti99" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://blog.cntlog.net/" target="_blank">http://blog.cntlog.net/</a>
 							</div>
 						</section>
 					</div>
@@ -349,6 +450,16 @@
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								REST APIの話とか、WordCamp US 2015で見た事感じた事とか話せればなーと思ってます。
 							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://www.facebook.com/HideOkamoto" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+									<li class="speaker__social-item"><a href="https://github.com/hideokamoto" target="_blank"><i class="fa fa-github"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/hideokamoto/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://wp-kyoto.net/" target="_blank">http://wp-kyoto.net/</a>
+							</div>
 						</section>
 					</div>
 					<div class="col-md-4">
@@ -360,9 +471,6 @@
 							<div class="speaker__badges">
 								<i class="wp-badge wp-badge--speaker"></i>
 								<i class="wp-badge wp-badge--community"></i>
-								<i class="wp-badge wp-badge--theme"></i>
-								<i class="wp-badge wp-badge--plugin"></i>
-								<i class="wp-badge wp-badge--translation"></i>
 							</div>
 							<div class="speaker__description">
 								大阪在住のウェブデザイナー。<br />
@@ -371,6 +479,16 @@
 							<div class="speaker__tweet">
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								得意なのはMC的なことです。来てるお客さんがやること・聞くことに困らない司会を心がけてます。できるお話があるとすれば、WordPressでこんな案件をやりましたよ、とか、長くWPサイトを管理してて困ったこと・その対策、みたいなお話ですかね。
+							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://twitter.com/witch_doktor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/witch_doktor/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://suikoudesign.com/suikolog/" target="_blank">http://suikoudesign.com/suikolog/</a>
+
 							</div>
 						</section>
 					</div>
@@ -383,9 +501,6 @@
 							<div class="speaker__badges">
 								<i class="wp-badge wp-badge--speaker"></i>
 								<i class="wp-badge wp-badge--community"></i>
-								<i class="wp-badge wp-badge--theme"></i>
-								<i class="wp-badge wp-badge--plugin"></i>
-								<i class="wp-badge wp-badge--translation"></i>
 							</div>
 							<div class="speaker__description">
 								個人事業のWebデザイナー。12年目。JILLA理事。自分のWebメディア運営で生計を立ててるイクメンです。日本各地のWordBenchやコワーキングスペースに顔出してます♪
@@ -394,11 +509,20 @@
 								<h2 class="speaker__tweet-title">ひとこと</h2>
 								自分のWebサイトで直請けの仕事の注文を貰う方法！フリーランス・独立する前後の話？的なお話！とか。
 							</div>
+							<div class="speaker__social">
+								<ul class="speaker__social-list">
+									<li class="speaker__social-item"><a href="https://www.facebook.com/webboyjp" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+									<li class="speaker__social-item"><a href="https://profiles.wordpress.org/kazuki-ohara" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+								</ul>
+							</div>
+							<div class="speaker__url">
+								<a href="http://co-working-space.net/" target="_blank">http://co-working-space.net/</a>
+							</div>
 						</section>
 					</div>
 				</div>
 			</section>
-			
+
 			<section id="timeline" class="section timeline">
 				<h1 class="section__title">
 					<i class="icon icon--timeline"></i><br />
@@ -412,41 +536,64 @@
 					</div>
 					<div class="timeline__item timeline__item--right">
 						<div class="session">
+							<div class="session__icon">
+								<img src="./assets/src/images/timeline/breaktime.svg" alt="" style="width: 50px" />
+							</div>
+							12:30 - 13:00 登壇者紹介 ＆ 歓談タイム
+						</div>
+					</div>
+					<div class="timeline__item timeline__item--left">
+						<div class="session">
 							<section class="session__division">
 								<h1 class="session__title">13:00 - 13:20 テーマセッション</h1>
 								<div class="session__media">
 									<i class="person person--mignon"></i>
 								</div>
 								<div class="session__body">
-									セッションタイトル
+									セッションタイトル調整中<br />
+									<span class="dashicons dashicons-admin-users"></span> Mignon Style
 								</div>
 							</section>
 							<section class="session__division session__division--talk">
 								<h1 class="session__title">13:50 - 14:20 テーマトークタイム</h1>
 								<div class="session__body">
-									<ul>
-										<li>テーマを公式ディレクトリに上げた理由は何ですか？</li>
-										<li>公式ディレクトリでマネタイズってできるんですか？</li>
-										<li>公式ディレクトリのテーマとそれ以外ってどう違うの？</li>
-									</ul>
-								</div>
-								<div class="session__mc">
-									<i class="person person--torounit"></i>
-								</div>
-								<div class="session__paneler">
-									<i class="person person--conti"></i>
-									<i class="person person--fukazawa"></i>
-									<i class="person person--hide"></i>
-									<i class="person person--ishikawa"></i>
-									<i class="person person--kitajima"></i>
-									<i class="person person--mignon"></i>
-									<i class="person person--moriyama"></i>
-									<i class="person person--oohara"></i>
+									<h2 class="session__talk-title">テーマを公式ディレクトリに上げた理由は何ですか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--mignon"></i>
+										<i class="person person--torounit"></i>
+										<i class="person person--hide"></i>
+									</div>
+
+									<h2 class="session__talk-title">公式ディレクトリでマネタイズってできるんですか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--mignon"></i>
+									</div>
+
+									<h2 class="session__talk-title">公式ディレクトリのテーマとそれ以外ってどう違うの？</h2>
+									<div class="session__mc">
+										<i class="person person--hide"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--conti"></i>
+										<i class="person person--fukazawa"></i>
+									</div>
 								</div>
 							</section>
 						</div>
 					</div>
-					<div class="timeline__item timeline__item--left">
+					<div class="timeline__item timeline__item--right">
 						<div class="session">
 							<section class="session__division">
 								<h1 class="session__title">14:30 - 14:50 運用系セッション</h1>
@@ -454,35 +601,92 @@
 									<i class="person person--oohara"></i>
 								</div>
 								<div class="session__body">
-									セッション名
+									セッションタイトル調整中<br />
+									<span class="dashicons dashicons-admin-users"></span> おおはらかずき
 								</div>
 							</section>
 							<section class="session__division session__division--talk">
 								<h1 class="session__title">14:50 - 15:35 運用・働き方系トークタイム</h1>
 								<div class="session__body">
-									<ul>
-										<li>製作者からみた良いメディアサイトを作る注意点はありますか？</li>
-										<li>PHPかけない人はWordPressどうやって活用すればいいですか？</li>
-										<li>これからWordPressを始めるなら何から始めれば良いですか？</li>
-									</ul>
-								</div>
-							</section>
-						</div>
-					</div>
-					<div class="timeline__item timeline__item--right">
-						<div class="session">
-						<section class="session__division session__division--talk">
-								<h1 class="session__title">15:50 - 16:50 コントリビューション系トークタイム</h1>
-								<div class="session__body">
-									<ul>
-										<li>WordPressコミュニティって何やってるんですか？</li>
-										<li>作者やってて良かったこと・辛かったことはありますか？</li>
-									</ul>
+									<h2 class="session__talk-title">製作者からみた良いメディアサイトを作る注意点はありますか？</h2>
+									<div class="session__mc">
+										<i class="person person--moriyama"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--oohara"></i>
+										<i class="person person--conti"></i>
+										<i class="person person--ishikawa"></i>
+										<i class="person person--fukazawa"></i>
+									</div>
+
+									<h2 class="session__talk-title">PHPかけない人はWordPressどうやって活用すればいいですか？</h2>
+									<div class="session__mc">
+										<i class="person person--moriyama"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--oohara"></i>
+										<i class="person person--conti"></i>
+										<i class="person person--torounit"></i>
+										<i class="person person--hide"></i>
+									</div>
+
+									<h2 class="session__talk-title">これからWordPressを始めるなら何から始めれば良いですか？</h2>
+									<div class="session__mc">
+										<i class="person person--moriyama"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--oohara"></i>
+										<i class="person person--conti"></i>
+										<i class="person person--torounit"></i>
+										<i class="person person--hide"></i>
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--mignon"></i>
+										<i class="person person--fukazawa"></i>
+									</div>
 								</div>
 							</section>
 						</div>
 					</div>
 					<div class="timeline__item timeline__item--left">
+						<div class="session">
+							<section class="session__division session__division--talk">
+								<h1 class="session__title">15:50 - 16:50 コントリビューション系トークタイム</h1>
+								<div class="session__body">
+									<h2 class="session__talk-title">WordPressコミュニティって何やってるんですか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--torounit"></i>
+										<i class="person person--mignon"></i>
+										<i class="person person--moriyama"></i>
+										<i class="person person--conti"></i>
+										<i class="person person--hide"></i>
+										<i class="person person--oohara"></i>
+									</div>
+
+									<h2 class="session__talk-title">作者やってて良かったこと・辛かったことはありますか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--torounit"></i>
+										<i class="person person--mignon"></i>
+										<i class="person person--moriyama"></i>
+										<i class="person person--conti"></i>
+										<i class="person person--hide"></i>
+										<i class="person person--oohara"></i>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="timeline__item timeline__item--right">
 						<div class="session">
 							<section class="session__division">
 								<h1 class="session__title">17:10 - 17:35 プラグインセッション</h1>
@@ -490,29 +694,33 @@
 									<i class="person person--torounit"></i>
 								</div>
 								<div class="session__body">
-									Hello Kushimotoで学ぶオブジェクト指向
+									セッションタイトル調整中<br />
+									<span class="dashicons dashicons-admin-users"></span> Toro_Unit
 								</div>
 							</section>
 							<section class="session__division session__division--talk">
 								<h1 class="session__title">17:35 - 17:55 プラグイントークタイム</h1>
 								<div class="session__body">
-									<ul>
-										<li>プラグインを作り続ける魅力とは？</li>
-										<li>テストってやっぱり書かないとダメなんですか？</li>
-									</ul>
-								</div>
-							</section>
-						</div>
-					</div>
-					<div class="timeline__item timeline__item--right">
-						<div class="session">
-						<section class="session__division session__division--talk">
-								<h1 class="session__title">15:50 - 16:50 コントリビューション系トークタイム</h1>
-								<div class="session__body">
-									<ul>
-										<li>WordPressコミュニティって何やってるんですか？</li>
-										<li>作者やってて良かったこと・辛かったことはありますか？</li>
-									</ul>
+									<h2 class="session__talk-title">プラグインを作り続ける魅力とは？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--torounit"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--ishikawa"></i>
+										<i class="person person--mignon"></i>
+									</div>
+
+									<h2 class="session__talk-title">テストってやっぱり書かないとダメなんですか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--torounit"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--hide"></i>
+									</div>
 								</div>
 							</section>
 						</div>
@@ -525,7 +733,8 @@
 									<i class="person person--kitajima"></i>
 								</div>
 								<div class="session__body">
-									セッションタイトル
+									セッションタイトル調整中<br />
+									<span class="dashicons dashicons-admin-users"></span> キタジマタカシ
 								</div>
 							</section>
 							<section class="session__division">
@@ -534,19 +743,53 @@
 									<i class="person person--ishikawa"></i>
 								</div>
 								<div class="session__body">
-									セッションタイトル
+									セッションタイトル調整中<br />
+									<span class="dashicons dashicons-admin-users"></span> 石川栄和
 								</div>
 							</section>
 							<section class="session__division session__division--talk">
 								<h1 class="session__title">18:30 - 19:10 対談系トークタイム</h1>
 								<div class="session__body">
-									<ul>
-										<li>人気テーマのそれぞれの違いについて(Habakiri ＆ Lightning)</li>
-										<li>黒い画面って覚えないとダメですか？</li>
-										<li>WordPress以外のCMSって使っていますか？</li>
-									</ul>
+									<h2 class="session__talk-title">人気テーマのそれぞれの違いについて(Habakiri ＆ Lightning)</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--ishikawa"></i>
+										<i class="person person--kitajima"></i>
+										<i class="person person--mignon"></i>
+									</div>
+
+									<h2 class="session__talk-title">黒い画面って覚えないとダメですか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--conti"></i>
+										<i class="person person--hide"></i>
+										<i class="person person--torounit"></i>
+									</div>
+
+									<h2 class="session__talk-title">WordPress以外のCMSって使っていますか？</h2>
+									<div class="session__mc">
+										<i class="person person--fukazawa"></i>
+									</div>
+									<div class="session__paneler">
+										<i class="person person--conti"></i>
+										<i class="person person--hide"></i>
+										<i class="person person--moriyama"></i>
+										<i class="person person--oohara"></i>
+									</div>
 								</div>
 							</section>
+						</div>
+					</div>
+					<div class="timeline__item timeline__item--right">
+						<div class="session">
+							<div class="session__icon">
+								<img src="./assets/src/images/timeline/dinner.svg" alt="" style="width: 50px" />
+							</div>
+							19:10 - 20:30 歓談タイム
 						</div>
 					</div>
 					<div class="timeline__item timeline__item--right">
@@ -556,7 +799,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section id="location" class="section location">
 				<h1 class="section__title">
 					<i class="icon icon--location"></i><br />
@@ -608,20 +851,36 @@
 					</div>
 				</div>
 			</section>
-			
-			<div id="contact" class="section contact">
+
+			<section id="contact" class="section contact">
+				<h1 class="contact__title"><img src="./assets/dest/images/contact/title.svg" alt="メンバー一同、お待ちしてます！" /></h1>
 				<div class="contact__message">
-					<img src="./assets/images/contact/message.png" alt="メンバー一同、お待ちしてます！" />
+					<i class="person person--ishikawa"></i>
+					<i class="person person--kitajima"></i>
+					<i class="person person--torounit"></i>
+					<i class="person person--mignon"></i>
+					<i class="person person--moriyama"></i>
+					<i class="person person--conti"></i>
+					<i class="person person--hide"></i>
+					<i class="person person--fukazawa"></i>
+					<i class="person person--oohara"></i>
 				</div>
 				<div class="contact__btn">
 					<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/" target="_blank">参加登録</a>
 				</div>
-			</div>
+
+				<div class="contact__share">
+					<ul class="contact__share-list">
+						<li class="contact__share-item"><div class="fb-like" data-href="http://wordbash.github.io/kyoto-vol1/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+						<li class="contact__share-item"><a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://wordbash.github.io/kyoto-vol1/">Tweet</a></li>
+					</ul>
+				</div>
+			</section>
 		</article>
 	</main>
-	
+
 	<footer id="footer">
-		<section class="productionby">
+		<section class="productionby hidden-xs">
 			<h1 class="productionby__title">Website production by WordBash</h1>
 			<ul class="productionby__list">
 				<li class="productionby__item">Direction : コンチ</li>
@@ -633,19 +892,28 @@
 				<li class="productionby__item">Logo &amp; Wapuu Design : WordBash</li>
 			</ul>
 		</section>
-		
+
 		<div class="copyright">
 			Copyright &copy; WordBash All Rights Reserved.
 		</div>
 	</footer>
-	
+
 	<div class="pagetop">
-		<a href="#container"><img src="./assets/images/pagetop.png" alt="Topへ" /></a>
+		<a href="#container" class="wapuu-pagetop">
+			<div class="wapuu-pagetop__balloon">
+				<div class="wapuu-pagetop__text">
+					<i class="wapuu-pagetop__arrow fa fa-chevron-up"></i>
+					Top へ
+				</div>
+			</div>
+			<img class="wapuu-pagetop__image" src="./assets/src/images/wapuu.svg" alt="" />
+		</a>
 	</div>
 <!-- end #container --></div>
 
-<script src="./assets/vendor/jquery/jquery-1.11.3.min.js"></script>
-<script src="./assets/vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
-<script src="./assets/dest/js/app.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="./assets/dest/js/app.js"></script>
 </body>
 </html>

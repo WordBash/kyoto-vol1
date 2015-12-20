@@ -1,0 +1,58 @@
+.wapuu-pagetop {
+	color: inherit;
+	width: 120px;
+	display: block;
+	text-decoration: none !important;
+	text-align: center;
+	&__balloon {
+		position: relative;
+		margin: 0 auto 20px;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		border: #CCC 2px solid;
+		background-color: #fff;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+		}
+		&::before {
+			z-index: 2;
+			margin-left: -3px;
+			bottom: -8px;
+			border-width: 8px 3px 0 3px;
+			border-color: #FFF transparent transparent transparent;
+		}
+
+		&::after {
+			z-index: 1;
+			margin-left: -6px;
+			bottom: -12px;
+			border-width: 12px 6px 0 6px;
+			border-color: #ccc transparent transparent transparent;
+		}
+	}
+
+	&__text {
+		width: inherit;
+		height: inherit;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__arrow {
+		display: block;
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+	}
+
+}
