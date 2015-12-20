@@ -76,6 +76,7 @@ jQuery( function( $ ) {
 			var item = $( '.timeline__item' );
 			console.log( item.css( 'float' ) );
 			if ( item.css( 'float' ) == 'none' ) {
+				item.css( 'margin-top', '' );
 				return;
 			}
 			
