@@ -12,7 +12,7 @@ gulp.task('copy', function() {
 	return gulp.src(
 		[
 			'./**/*.html',
-			'./assets/dest/**',
+			'./assets/**',
 			"!./release/**",
 			"!./node_modules/**/*.*"
 		],
