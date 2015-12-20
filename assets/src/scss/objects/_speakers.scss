@@ -81,4 +81,40 @@
 			}
 		}
 	}
+	
+	&__social {
+		&-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		
+		&-item {
+			font-size: 1.6rem;
+			display: inline-block;
+			margin: 0 2px;
+			padding: 0;
+		}
+		
+		.fa-twitter {
+			color: #55acee;
+		}
+		
+		.fa-facebook-square {
+			color: #315096;
+		}
+		
+		.fa-github {
+			color: #333;
+		}
+		
+		.fa-wordpress {
+			color: #333;
+		}
+	}
+	
+	&__url {
+		text-align: center;
+	}
 }
