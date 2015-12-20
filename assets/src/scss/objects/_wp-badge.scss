@@ -19,7 +19,13 @@
 		background-color: #F7AD43;
 		&:before {
 			content: "\f488";
-			//background-image: url( '../images/wp-badges/speaker.png' );
+		}
+	}
+
+	&--code {
+		background-color: #cd0000;
+		&:before {
+			content: "\f475";
 		}
 	}
 	
@@ -27,7 +33,6 @@
 		background-color: #11799d;
 		&:before {
 			content: "\f307";
-			//background-image: url( '../images/wp-badges/community.png' );
 		}
 	}
 	
@@ -35,7 +40,6 @@
 		background-color: #4e3288;
 		&:before {
 			content: "\f100";
-			//background-image: url( '../images/wp-badges/theme.png' );
 		}
 	}
 	
@@ -43,7 +47,6 @@
 		background-color: #F06723;
 		&:before {
 			content: "\f106";
-			//background-image: url( '../images/wp-badges/plugin.png' );
 		}
 	}
 	
@@ -51,7 +54,6 @@
 		background-color: #C32283;
 		&:before {
 			content: "\f326";
-			//background-image: url( '../images/wp-badges/translation.png' );
 		}
 	}
 }
