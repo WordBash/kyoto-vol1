@@ -61,4 +61,50 @@ jQuery( function( $ ) {
 			$( 'body' ).css( 'padding-bottom', margin );
 		}
 	} )();
+	
+	/**
+	 * タイムラインの各セッションを上下くっつける
+	 */
+	( function() {
+		set_section_position();
+		
+		$( window ).resize( function() {
+			set_section_position();
+		} );
+		
+		function set_section_position() {
+			var item = $( '.timeline__item' );
+			console.log( item.css( 'float' ) );
+			if ( item.css( 'float' ) == 'none' ) {
+				return;
+			}
+			
+			item.each( function( i, e ) {
+				if ( $( e ).hasClass( 'timeline__item--left' ) ) {
+					var brother = $( e ).prev( '.timeline__item--left' );
+					if ( !brother.length ) {
+						var brother = $( e ).prev().prev( '.timeline__item--left' );
+					}
+				} else if ( $( e ).hasClass( 'timeline__item--right' ) ) {
+					var brother = $( e ).prev( '.timeline__item--right' );
+					if ( !brother.length ) {
+						var brother = $( e ).prev().prev( '.timeline__item--right' );
+					}
+				}
+				
+				if ( brother.length ) {
+					var item_position    = $( e ).position();
+					var brother_position = brother.position();
+					
+					if ( typeof item_position !== 'undefined' && typeof brother_position !== 'undefined' ) {
+						var item_top    = $( e ).position().top;
+						var brother_top = brother.position().top;
+						var brother_margin = parseInt( brother.css( 'margin-top' ) );
+						
+						$( e ).css( 'margin-top', brother_top - item_top + brother.outerHeight() + brother_margin  );
+					}
+				}
+			} );
+		}
+	} )();
 } );
