@@ -30,17 +30,11 @@ jQuery( function( $ ) {
 				if ( scroll == start ) {
 					// 停止中
 					pagetop.css( 'transition', '' );
-					pagetop.css( 'bottom', 0 );
+					console.log( scroll );
+					console.log( $( document ).height() );
+					pagetop.css( 'bottom',  100 - ( scroll / $( document ).height() * 100 ) + '%' );
 				}
 			}, 200 );
-			
-			/*
-			if ( scroll > 0 ) {
-				pagetop.css( 'bottom', 0 );
-			} else {
-				pagetop.css( 'bottom', '' );
-			}
-			*/
 		} );
 		
 		/*
