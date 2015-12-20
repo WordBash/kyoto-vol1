@@ -1,17 +1,21 @@
-#contribute
+#コントリビュートについて
 
+## ビルド方法
 
-### build, start server and watch. (BrowserSync)
+```
+$ npm install
+$ gulp build
+```
+
+### ビルドとか自動ビルド。http://localhost:3000 でいろいろ立ち上がります。
 
 ```
 $ gulp
-
 ```
 
-### build assets.
+### アセットのビルド
 
 ```
 $ gulp build
-
 ```
 
