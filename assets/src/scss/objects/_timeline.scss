@@ -2,31 +2,31 @@
 	&__body {
 		overflow: hidden;
 	}
-			
+
 	&__copy {
 	}
-	
+
 	&__item {
 		padding-top: 10px;
 		margin-bottom: 2rem;
-		
+
 		@include bp-min($screen-md-min) {
 			margin-bottom: 0;
 			width: 50%;
 			position: relative;
-			
+
 			&--left {
 				float: left;
 				padding-right: 60px;
 			}
-			
+
 			&--right {
 				float: left;
 				margin-left: 50%;
 				padding-left: 60px;
 			}
 		}
-		
+
 		.session {
 			border: 1px solid #ccc;
 			border-radius: 5px;
@@ -34,67 +34,70 @@
 			padding: 20px;
 			text-align: center;
 			position: relative;
-			
+
 			&__division {
 				margin: 0 0 1em;
 				text-align: left;
 				overflow: hidden;
-				
+
 				&:last-child {
 					margin-bottom: 0;
 				}
-				
+
 				&--talk {
 					.session__title {
 						background-color: #0370CC;
 					}
-					
+
 					.session__body {
 						font-size: 1.4rem;
 					}
 				}
 			}
-			
+
 			&__title {
 				background-color: #0D337A;
 				color: #fff;
 				font-size: 1.4rem;
 				margin: 0 0 1rem;
 				padding: 5px 10px;
+				line-height: 1.4;
 			}
-			
+
 			&__media {
 				float: right;
 				margin-left: 20px;
-				
+
 				.person {
 					height: 80px;
 					width: 80px;
 				}
 			}
-			
+
 			&__body {
 				font-size: 1.6rem;
+				line-height: 1.4;
 			}
-			
+
 			&__talk-title {
 				font-size: 1.4rem;
 				font-weight: normal;
 				margin: 5px 0;
-				
+				line-height: 1.5 ;
+
 				&:before {
 					content: "\f130";
 					font-family: dashicons;
 					margin-right: 4px;
 				}
 			}
-			
+
 			&__mc {
 				float: right;
 				margin-left: 20px;
 				text-align: center;
 				position: relative;
-				
+
 				&:before {
 					content: 'MC';
 					display: inline-block;
@@ -109,9 +112,9 @@
 					top: -20px;
 				}
 			}
-			
+
 			&__paneler {
-				
+
 			}
 		}
 	}
@@ -131,31 +134,31 @@
 			top: 0;
 			bottom: 0;
 		}
-		
+
 		&--left {
 			&:before {
 				right: -3px;
 			}
 		}
-		
+
 		&--right {
 			&:before {
 				left: -3px;
 			}
 		}
-		
+
 		&:first-child {
 			&:before {
 				top: 50%;
 			}
 		}
-		
+
 		&:first-child, &--right {
 			&:before {
 				display: block;
 			}
 		}
-		
+
 		&:last-child {
 			&:before {
 				bottom: 50%;
@@ -182,13 +185,13 @@
 			transform: translateY(-50%);
 			z-index: 1;
 		}
-		
+
 		&--left {
 			&:after {
 				right: -11px;
 			}
 		}
-		
+
 		&--right {
 			&:after {
 				left: -11px;
@@ -209,25 +212,25 @@
 			top: 50%;
 			transform: translateY(-50%);
 		}
-		
+
 		.timeline__item--left & {
 			&:before {
 				border-left: 10px solid #ccc;
 				right: -10px;
 			}
-			
+
 			&:after {
 				border-left: 10px solid #fff;
 				right: -9px;
 			}
 		}
-		
+
 		.timeline__item--right & {
 			&:before {
 				border-right: 10px solid #ccc;
 				left: -10px;
 			}
-			
+
 			&:after {
 				border-right: 10px solid #fff;
 				left: -9px;
