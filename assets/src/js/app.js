@@ -39,4 +39,26 @@ jQuery( function( $ ) {
 			}
 		}
 	} )();
+	
+	/**
+	 * スマホフッター余白
+	 */
+	( function() {
+		set_sp_footer_margin();
+		
+		$( window ).resize( function() {
+			set_sp_footer_margin();
+		} );
+		
+		function set_sp_footer_margin() {
+			var gnav = $( '.global-nav' );
+			
+			if ( gnav.css( 'position' ) == 'fixed' ) {
+				var margin = gnav.height()
+			} else {
+				var margin = 0;
+			}
+			$( 'body' ).css( 'padding-bottom', margin );
+		}
+	} )();
 } );
