@@ -27,27 +27,25 @@
 	padding: 20px 15px;
 	flex-basis: 100%;
         
-        &.wp-badge__list{
-          list-style: none;
-          overflow: hidden;
-          padding-bottom: 0;
-          margin-bottom: 60px;
-          border: 1px solid #CFD8DC;
-          border-radius:10px;
-          li{
-            width: 33.3%;
-            padding-right: 2rem;
-            float: left;
-            text-align: left;
-            margin-bottom: 1.8rem;
-            i{
-              text-align: center;
-              margin-right: 1rem;
-            }
-
-          }
-
-        }
+	&.wp-badge__list{
+		list-style: none;
+		overflow: hidden;
+		padding-bottom: 0;
+		margin-bottom: 60px;
+		border: 1px solid #CFD8DC;
+		border-radius:10px;
+		li{
+			width: 33.3%;
+			padding-right: 2rem;
+			float: left;
+			text-align: left;
+			margin-bottom: 1.8rem;
+			i{
+			  text-align: center;
+			  margin-right: 1rem;
+			}
+		}	
+	}
 
 	&__media {
 		margin: 0 auto 1.5rem;
