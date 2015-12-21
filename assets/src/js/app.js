@@ -6,70 +6,47 @@ jQuery( function( $ ) {
 	 * pagetop
 	 */
 	( function() {
-		var timer   = false;
-		var start   = 0;
 		var pagetop = $( '.pagetop' );
+		$( window ).load( function() {
+			pagetop.addClass( 'fade-in' );
+		} );
 		
+		var timer = false;
+		var start = 0;
 		$( window ).scroll( function() {
 			if ( timer !== false ) {
 				clearTimeout( timer );
 			}
 			var scroll = $( window ).scrollTop();
-			var pagetop_bottom = parseInt( pagetop.css( 'bottom' ) );
+			var pagetop_top = parseInt( pagetop.css( 'top' ) );
 			if ( scroll > start ) {
 				// 下にスクロール中
-				pagetop.css( 'transition', 'none' );
-				pagetop.css( 'bottom', pagetop_bottom + scroll - start );
+				if ( pagetop_top + pagetop.height() >= 0 ) {
+					pagetop.css( 'transition', 'none' );
+					pagetop.css( 'top', pagetop_top - scroll + start );
+				}
 			} else if ( scroll < start ) {
 				// 上にスクロール中
-				pagetop.css( 'transition', 'none' );
-				pagetop.css( 'bottom', pagetop_bottom + scroll - start );
+				if ( pagetop_top <= $( window ).height() ) {
+					pagetop.css( 'transition', 'none' );
+					pagetop.css( 'top', pagetop_top - scroll + start );
+				}
 			}
 			start = $( window ).scrollTop();
 			var timer = setTimeout( function() {
 				if ( scroll == start ) {
 					// 停止中
 					pagetop.css( 'transition', '' );
-					console.log( scroll );
-					console.log( $( document ).height() );
-					pagetop.css( 'bottom',  100 - ( scroll / $( document ).height() * 100 ) + '%' );
+					
+					if ( scroll >= $( document ).height() - $( window ).height() ) {
+						var top = $( window ).height() - pagetop.height() - 90;
+						pagetop.css( 'top',  top );
+					} else {
+						pagetop.css( 'top',  120 );
+					}
 				}
 			}, 200 );
 		} );
-		
-		/*
-		var default_top = parseInt( pagetop.css( 'top' ) ) * -1;
-		var slowly = 3;
-		var bottom = 10;
-		update();
-		
-		$( window ).scroll( function() {
-			update();
-		} );
-		
-		$( window ).resize( function() {
-			update();
-		} );
-		
-		function update() {
-			if ( pagetop.css( 'display' ) == 'none' ) {
-				return;
-			}
-			
-			var scroll      = $( window ).scrollTop();
-			var pagetop_top = scroll / slowly - default_top;
-			
-			// pagetop がブラウザ底より上の間 top を更新
-			var window_height  = $( window ).height();
-			var pagetop_height = pagetop.height();
-			
-			if ( pagetop_top + pagetop_height <= window_height - bottom ) {
-				pagetop.css( 'top', pagetop_top );
-			} else {
-				pagetop.css( 'top', window_height - pagetop_height - bottom );
-			}
-		}
-		*/
 	} )();
 	
 	/**
