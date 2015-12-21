@@ -59,7 +59,7 @@
 		text-align: center;
 		white-space: nowrap;
 		overflow: hidden;
-		transition: margin 0.2s;
+		transition: margin 0.3s ease-in-out;
 		
 		@include bp-min($screen-sm-min) {
 			margin-top: -55px;
