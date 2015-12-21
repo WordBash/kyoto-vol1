@@ -47,6 +47,13 @@ jQuery( function( $ ) {
 				}
 			}, 200 );
 		} );
+		
+		$( window ).scroll( function() {
+			var scroll = $( window ).scrollTop();
+			if ( scroll >= 700 ) {
+				$( '.wapuu-pagetop__balloon' ).addClass( 'fade-in' );
+			}
+		} );
 	} )();
 	
 	/**
