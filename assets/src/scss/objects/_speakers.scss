@@ -5,7 +5,7 @@
 			margin-left: -5px;
 			display: flex;
 			flex-wrap: wrap;
-			
+
 			> div {
 				padding-right: 5px;
 				padding-left: 5px;
@@ -13,7 +13,7 @@
 				flex-basis: 33.33333%;
 				display: flex;
 			}
-			
+
 			:nth-child(3n+1) {
 				clear: both;;
 			}
@@ -26,37 +26,58 @@
 	margin-bottom: 20px;
 	padding: 20px 15px;
 	flex-basis: 100%;
-	
+        &.wp-badge__list{
+          list-style: none;
+          overflow: hidden;
+          padding-bottom: 0;
+          margin-bottom: 60px;
+          border: 1px solid #CFD8DC;
+          border-radius:10px;
+          li{
+            width: 33.3%;
+            padding-right: 2rem;
+            float: left;
+            text-align: left;
+            margin-bottom: 1.8rem;
+            i{
+              text-align: center;
+              margin-right: 1rem;
+            }
+
+          }
+
+        }
+
 	&__media {
 		margin: 0 auto 1.5rem;
 		text-align: center;
-		
+
 		.person {
 			height: 170px;
 			width: 170px;
 		}
 	}
-	
+
 	&__name {
 		font-weight: bold;
 		font-size: 2.1rem;
 		margin: 0 0 1rem;
 		text-align: center;
 	}
-	
+
 	&__badges {
 		margin: 0 0 1rem;
 		text-align: center;
-		
+
 		.wp-badge {
 			margin: 0 2px;
 		}
 	}
-	
+
 	&__tweet {
 		margin-top: 5rem;
 		position: relative;
-		
+
 		&-title {
 			background-color: #00b9d4;
 			border-radius: 100%;
@@ -68,7 +89,7 @@
 			top: -35px;
 			left: 50%;
 			transform: translateX(-50%);
-			
+
 			&:after {
 				content: '';
 				border-top: 5px solid #00b9d4;
@@ -81,7 +102,7 @@
 			}
 		}
 	}
-	
+
 	&__social {
 		&-list {
 			list-style: none;
@@ -89,31 +110,31 @@
 			padding: 0;
 			text-align: center;
 		}
-		
+
 		&-item {
 			font-size: 1.6rem;
 			display: inline-block;
 			margin: 0 2px;
 			padding: 0;
 		}
-		
+
 		.fa-twitter {
 			color: #55acee;
 		}
-		
+
 		.fa-facebook-square {
 			color: #315096;
 		}
-		
+
 		.fa-github {
 			color: #333;
 		}
-		
+
 		.fa-wordpress {
 			color: #333;
 		}
 	}
-	
+
 	&__url {
 		text-align: center;
 	}
