@@ -12,6 +12,12 @@
 		border-radius: 50%;
 		border: #CCC 2px solid;
 		background-color: #fff;
+		opacity: 0;
+		transition: opacity 2s linear;
+		
+		&.fade-in {
+			opacity: 1;
+		}
 
 		&::before,
 		&::after {
