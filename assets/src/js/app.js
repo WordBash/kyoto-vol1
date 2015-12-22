@@ -6,8 +6,23 @@ jQuery( function( $ ) {
 	 * pagetop
 	 */
 	( function() {
+		function set_fixed_top() {
+			if ( scroll >= $( document ).height() - $( window ).height() ) {
+				var top = $( window ).height() - pagetop.height() - 90;
+				pagetop.css( 'top',  top );
+			} else {
+				var top = 120;
+				var balloon = $( '.wapuu-pagetop__balloon' );
+				if ( ! balloon.hasClass( 'fade-in' ) ) {
+					top -= balloon.outerHeight();
+				}
+				pagetop.css( 'top',  top );
+			}
+		}
+		
 		var pagetop = $( '.pagetop' );
 		$( window ).load( function() {
+			set_fixed_top();
 			pagetop.addClass( 'fade-in' );
 		} );
 		
@@ -37,13 +52,7 @@ jQuery( function( $ ) {
 				if ( scroll == start ) {
 					// 停止中
 					pagetop.css( 'transition', '' );
-					
-					if ( scroll >= $( document ).height() - $( window ).height() ) {
-						var top = $( window ).height() - pagetop.height() - 90;
-						pagetop.css( 'top',  top );
-					} else {
-						pagetop.css( 'top',  120 );
-					}
+					set_fixed_top();
 				}
 			}, 200 );
 		} );
