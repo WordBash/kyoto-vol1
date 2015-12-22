@@ -7,7 +7,24 @@ jQuery( function( $ ) {
 	 */
 	( function() {
 		var pagetop = $( '.pagetop' );
+		var scroll  = 0;
+		
+		function set_fixed_top() {
+			if ( scroll >= $( document ).height() - $( window ).height() ) {
+				var top = $( window ).height() - pagetop.height() - 90;
+				pagetop.css( 'top',  top );
+			} else {
+				var top = 120;
+				var balloon = $( '.wapuu-pagetop__balloon' );
+				if ( ! balloon.hasClass( 'fade-in' ) ) {
+					top -= balloon.outerHeight();
+				}
+				pagetop.css( 'top',  top );
+			}
+		}
+			
 		$( window ).load( function() {
+			set_fixed_top();
 			pagetop.addClass( 'fade-in' );
 		} );
 		
@@ -17,7 +34,7 @@ jQuery( function( $ ) {
 			if ( timer !== false ) {
 				clearTimeout( timer );
 			}
-			var scroll = $( window ).scrollTop();
+			scroll = $( window ).scrollTop();
 			var pagetop_top = parseInt( pagetop.css( 'top' ) );
 			if ( scroll > start ) {
 				// 下にスクロール中
@@ -37,21 +54,18 @@ jQuery( function( $ ) {
 				if ( scroll == start ) {
 					// 停止中
 					pagetop.css( 'transition', '' );
-					
-					if ( scroll >= $( document ).height() - $( window ).height() ) {
-						var top = $( window ).height() - pagetop.height() - 90;
-						pagetop.css( 'top',  top );
-					} else {
-						pagetop.css( 'top',  120 );
-					}
+					set_fixed_top();
 				}
 			}, 200 );
 		} );
 		
 		$( window ).scroll( function() {
-			var scroll = $( window ).scrollTop();
+			scroll = $( window ).scrollTop();
+			var balloon = $( '.wapuu-pagetop__balloon' );
 			if ( scroll >= 700 ) {
-				$( '.wapuu-pagetop__balloon' ).addClass( 'fade-in' );
+				balloon.addClass( 'fade-in' );
+			} else {
+				balloon.removeClass( 'fade-in' );
 			}
 		} );
 	} )();
