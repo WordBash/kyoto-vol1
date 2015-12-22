@@ -1,16 +1,26 @@
 .pagetop {
 	display: none;
+	opacity: 0;
 	position: fixed;
-	right: 10px;
-	bottom: 100%;
-	transition: bottom 2s ease-out 0s;
+	right: 20px;
+	top: -100%;
+	z-index: 2;
+	transition: opacity 2s linear, top 2s ease-out;
 	animation-name: pagetop;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	
-	@include bp-min($screen-md-min) {
+	@include bp-min($screen-sm-min) {
 		display: block;
-		z-index: 2;
+	}
+	
+	@include bp-min($screen-md-min) {
+		right: 40px;
+	}
+	
+	&.fade-in {
+		opacity: 1;
+		top: 120px;
 	}
 }
 
