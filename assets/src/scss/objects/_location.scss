@@ -74,13 +74,18 @@
 
 	&__map-link {
 		@include bp-max($screen-xs-max) {
-			&:before {
-				display: block;
-				content: 'Google マップで見る';
-			}
 			display: block;
-			height: 1.5em;
-			overflow: hidden;
+			background-color: #142a7c;
+			border-radius: 10px;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			
+			&:hover, &:active, &:focus {
+				color: #fff;
+				text-decoration: none;
+				opacity: 0.9;
+			}
 		}
 	}
 }
