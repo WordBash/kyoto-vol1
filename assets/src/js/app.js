@@ -50,8 +50,11 @@ jQuery( function( $ ) {
 		
 		$( window ).scroll( function() {
 			var scroll = $( window ).scrollTop();
+			var balloon = $( '.wapuu-pagetop__balloon' );
 			if ( scroll >= 700 ) {
-				$( '.wapuu-pagetop__balloon' ).addClass( 'fade-in' );
+				balloon.addClass( 'fade-in' );
+			} else {
+				balloon.removeClass( 'fade-in' );
 			}
 		} );
 	} )();
