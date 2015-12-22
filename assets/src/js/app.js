@@ -6,6 +6,9 @@ jQuery( function( $ ) {
 	 * pagetop
 	 */
 	( function() {
+		var pagetop = $( '.pagetop' );
+		var scroll  = 0;
+		
 		function set_fixed_top() {
 			if ( scroll >= $( document ).height() - $( window ).height() ) {
 				var top = $( window ).height() - pagetop.height() - 90;
@@ -19,8 +22,7 @@ jQuery( function( $ ) {
 				pagetop.css( 'top',  top );
 			}
 		}
-		
-		var pagetop = $( '.pagetop' );
+			
 		$( window ).load( function() {
 			set_fixed_top();
 			pagetop.addClass( 'fade-in' );
@@ -32,7 +34,7 @@ jQuery( function( $ ) {
 			if ( timer !== false ) {
 				clearTimeout( timer );
 			}
-			var scroll = $( window ).scrollTop();
+			scroll = $( window ).scrollTop();
 			var pagetop_top = parseInt( pagetop.css( 'top' ) );
 			if ( scroll > start ) {
 				// 下にスクロール中
@@ -58,7 +60,7 @@ jQuery( function( $ ) {
 		} );
 		
 		$( window ).scroll( function() {
-			var scroll = $( window ).scrollTop();
+			scroll = $( window ).scrollTop();
 			var balloon = $( '.wapuu-pagetop__balloon' );
 			if ( scroll >= 700 ) {
 				balloon.addClass( 'fade-in' );
