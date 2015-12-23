@@ -1,18 +1,20 @@
+@charset "UTF-8";
+
 #header {
 	.container {
 		position: relative;
 	}
-	
+
 	.global-nav {
 		z-index: 1;
-		
+
 		@include bp-max($screen-xs-max) {
 			position: fixed;
 			bottom: 0;
 			left: 0;
 			right: 0;
 		}
-		
+
 		@include bp-min($screen-sm-min) {
 			position: absolute;
 			top: 0;

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .pagetop {
 	display: none;
 	opacity: 0;
@@ -9,15 +11,15 @@
 	animation-name: pagetop;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
-	
+
 	@include bp-min($screen-sm-min) {
 		display: block;
 	}
-	
+
 	@include bp-min($screen-md-min) {
 		right: 40px;
 	}
-	
+
 	&.fade-in {
 		opacity: 1;
 	}
