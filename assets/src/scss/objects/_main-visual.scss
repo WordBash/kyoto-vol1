@@ -24,6 +24,8 @@
 	}
 
 	&__inner {
+		position: relative;
+		z-index: 2;
 	}
 
 	&__logo {
@@ -129,5 +131,73 @@
 	
 	.contact__share {
 		padding-top: 2rem;
+	}
+	
+	.character {
+		display: none;
+		position: absolute;
+		z-index: 1;
+		
+		@include bp-min($screen-sm-min) {
+			display: inline-block;
+		}
+		
+		@function convert_to_percent( $px ) {
+			@return ($px/1200*100%);
+		}
+		
+		&--fukazawa {
+			left: convert_to_percent(20);
+			bottom: convert_to_percent(45);
+			max-width: convert_to_percent(96);
+		}
+		
+		&--moriyama {
+			left: convert_to_percent(220);
+			bottom: convert_to_percent(74);
+			max-width: convert_to_percent(64);
+		}
+		
+		&--hide {
+			left: convert_to_percent(150);
+			bottom: convert_to_percent(45);
+			max-width: convert_to_percent(80);
+		}
+		
+		&--ishikawa {
+			left: convert_to_percent(307);
+			bottom: convert_to_percent(58);
+			max-width: convert_to_percent(102);
+		}
+		
+		&--oohara {
+			right: convert_to_percent(336);
+			bottom: convert_to_percent(69);
+			max-width: convert_to_percent(72);
+		}
+		
+		&--torounit {
+			right: convert_to_percent(244);
+			bottom: convert_to_percent(43);
+			max-width: convert_to_percent(87);
+		}
+		
+		&--kitajima {
+			right: convert_to_percent(190);
+			bottom: convert_to_percent(61);
+			max-width: convert_to_percent(57);
+		}
+		
+		&--mignon {
+			right: convert_to_percent(118);
+			bottom: convert_to_percent(50);
+			max-width: convert_to_percent(78);
+		}
+		
+		&--conti {
+			right: convert_to_percent(18);
+			bottom: convert_to_percent(40);
+			max-width: convert_to_percent(67);
+		}
 	}
 }
