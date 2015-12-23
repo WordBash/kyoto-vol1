@@ -1,13 +1,15 @@
+@charset "UTF-8";
+
 .section {
 	padding-top: 55px;
-	
+
 	&__title {
 		font-family: 'Quicksand', sans-serif;
 		font-size: 2.4rem;
 		font-weight: normal;
 		margin: 0 0 20px;
 		text-align: center;
-		
+
 		.icon {
 			background-color: #0d337a;
 			border-radius: 100%;
@@ -16,11 +18,11 @@
 			width: 80px;
 		}
 	}
-	
+
 	&__content {
 		background-color: #F9F9F9;
 		padding: 30px 20px;
-		
+
 		@include bp-min($screen-md-min) {
 			padding: 80px;
 		}

@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 .wapuu-pagetop {
 	color: inherit;
 	width: 120px;
@@ -14,7 +17,7 @@
 		background-color: #fff;
 		opacity: 0;
 		transition: opacity 2s linear;
-		
+
 		&.fade-in {
 			opacity: 1;
 		}

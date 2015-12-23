@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 .icon {
 	height: 80px;
 	width: 80px;
@@ -5,78 +8,32 @@
 	background-position: 50% 50%;
 	display: inline-block;
 	overflow: hidden;
-	
+
 	&--about {
 		background-image: url( '../images/icon/about.svg' );
 	}
-	
+
 	&--content {
 		background-image: url( '../images/icon/content.svg' );
 	}
-	
+
 	&--speaker {
 		background-image: url( '../images/icon/speaker.svg' );
 	}
-	
+
 	&--timeline {
 		background-image: url( '../images/icon/timeline.svg' );
 	}
-	
+
 	&--location {
 		background-image: url( '../images/icon/location.svg' );
 	}
-	
+
 	&--contact {
 		background-image: url( '../images/icon/contact.svg' );
 	}
-	
+
 	&--entry {
 		background-image: url( '../images/icon/entry.svg' );
-	}
-}
-
-.person {
-	background-size: cover;
-	background-position: 50% 50%;
-	display: inline-block;
-	height: 35px;
-	width: 35px;
-	overflow: hidden;
-	border-radius: 100%;
-
-	&--conti {
-		background-image: url( 'https://www.gravatar.com/avatar/bbfc276088051356a5967389b705148e?s=340' );
-	}
-
-	&--fukazawa {
-		background-image: url( 'https://www.gravatar.com/avatar/21a5bc627ca0f66c8e3bccbd18aefc44?s=340' );
-	}
-
-	&--hide {
-		background-image: url( 'https://www.gravatar.com/avatar/75486cbfd37125f121cf4a6c5614601c?s=340' );
-	}
-
-	&--ishikawa {
-		background-image: url( 'https://www.gravatar.com/avatar/e2aba047ee1042d24027d960cd37d938?s=340' );
-	}
-
-	&--kitajima {
-		background-image: url( 'https://www.gravatar.com/avatar/341f9bfd1ef3b1f5f08eddac252f8c5f?s=340' );
-	}
-
-	&--mignon {
-		background-image: url( 'https://www.gravatar.com/avatar/1a859fa75dfe740285ea10c18c574749?s=340' );
-	}
-
-	&--moriyama {
-		background-image: url( 'https://www.gravatar.com/avatar/79294868a241e80ea4fda34c618b8a11?s=340' );
-	}
-
-	&--oohara {
-		background-image: url( 'https://www.gravatar.com/avatar/b955c1434967f046063c449d08d16a26?s=340' );
-	}
-
-	&--torounit {
-		background-image: url( 'https://www.gravatar.com/avatar/e03953e0c18d776fead147601fdc3899?s=340' );
 	}
 }
