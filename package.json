@@ -1,5 +1,7 @@
 {
-  "browserify-shim": {},
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
   "devDependencies": {
     "autoprefixer": "^6.2.1",
     "babel-preset-es2015": "^6.1.18",
