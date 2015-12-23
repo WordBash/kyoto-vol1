@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 .speakers {
 	@include bp-min($screen-md-min) {
 		.row {
@@ -26,7 +29,7 @@
 	margin-bottom: 20px;
 	padding: 20px 15px;
 	flex-basis: 100%;
-        
+
 	&.wp-badge__list{
 		list-style: none;
 		overflow: hidden;
@@ -44,7 +47,7 @@
 			  text-align: center;
 			  margin-right: 1rem;
 			}
-		}	
+		}
 	}
 
 	&__media {

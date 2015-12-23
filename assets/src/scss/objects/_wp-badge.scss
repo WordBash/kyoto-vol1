@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .wp-badge {
 	display: inline-block;
 	height: 26px;
@@ -5,6 +7,7 @@
 	line-height: 26px;
 	font-size: 16px;
 	font-family: 'dashicons';
+	text-align: center;
 	font-style: normal;
 	color: #FFF;
 	border-radius: 50%;
@@ -14,7 +17,7 @@
 	&:before {
 		content: '';
 	}
-	
+
 	&--speaker {
 		background-color: #F7AD43;
 		&:before {
@@ -28,28 +31,28 @@
 			content: "\f475";
 		}
 	}
-	
+
 	&--community {
 		background-color: #11799d;
 		&:before {
 			content: "\f307";
 		}
 	}
-	
+
 	&--theme {
 		background-color: #4e3288;
 		&:before {
 			content: "\f100";
 		}
 	}
-	
+
 	&--plugin {
 		background-color: #F06723;
 		&:before {
 			content: "\f106";
 		}
 	}
-	
+
 	&--translation {
 		background-color: #C32283;
 		&:before {

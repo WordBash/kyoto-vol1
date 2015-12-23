@@ -1,18 +1,20 @@
+@charset "UTF-8";
+
 .location {
 	.section__content {
 		padding-right: 20px;
 		padding-left: 20px;
 	}
-	
+
 	&__item {
 		margin-bottom: 2rem;
 		overflow: hidden;
-		
+
 		@include bp-min($screen-md-min) {
 			margin-bottom: 1rem;
 		}
 	}
-	
+
 	&__h {
 		background-color: #0D337A;
 		color: #fff;
@@ -80,7 +82,7 @@
 			color: #fff;
 			padding: 10px;
 			text-align: center;
-			
+
 			&:hover, &:active, &:focus {
 				color: #fff;
 				text-decoration: none;

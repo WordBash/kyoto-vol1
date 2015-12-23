@@ -111,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</a>
 					</li>
 					<li class="global-nav__item">
-						<a href="https://wordbash.doorkeeper.jp/events/36460?nav" target="_blank">
+					    <a class="gtm-click" href="http://connpass.com/event/24608/?nav" target="_blank">
 							<i class="icon icon--entry"></i>
 							<span class="global-nav__item-label">ENTRY</span>
 						</a>
@@ -124,22 +124,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="main-visual__inner">
 				<h1 class="main-visual__logo"><img src="./assets/dest/images/main-visual/logo.png"
 				                                   alt="WordBash Kyoto"/></h1>
-				<h2 class="main-visual__copy">最初っからクライマックス？<br/>懇親会から始まるイベントはじめました</h2>
+				<h2 class="main-visual__copy">
+					最初っからクライマックス？<br/>
+					<small>〜懇親会から始まるイベントはじめました〜</small>
+				</h2>
 				<div class="main-visual__date">
 					2016/1/23
 					<small>(sat)</small>
 					13:30 - 20:00
 				</div>
 				<div class="main-visual__price">
-					参加費: <strong>3,000</strong>円
+					参加費: <strong>2,500</strong>円～
 				</div>
 				<div class="main-visual__place">
 					会場：京都コワーキングスペース coto
 				</div>
 
-				<a class="btn btn-register" href="https://wordbash.doorkeeper.jp/events/36460?mv"
+				<a class="btn btn-register gtm-click" href="http://connpass.com/event/24608/?mv"
 				   target="_blank">参加登録</a>
+		
+				<img class="main-visual__wapuu hidden-sm hidden-md hidden-lg" src="./assets/dest/images/wapuu.svg" alt=""/>
+
+				<div class="contact__share">
+					<ul class="contact__share-list">
+						<li class="contact__share-item">
+							<div class="fb-like" data-href="http://wordbash.github.io/kyoto-vol1/"
+							     data-layout="button_count" data-action="like" data-show-faces="false"
+							     data-share="false"></div>
+						</li>
+						<li class="contact__share-item"><a href="https://twitter.com/share" class="twitter-share-button"
+														{count}
+														data-url="http://wordbash.github.io/kyoto-vol1/" data-hashtags="WordBash">Tweet</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+
 		</div>
 	</header>
 
@@ -217,7 +237,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</h1>
 				<div class="section__content">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<section class="content-item text-center">
 								<div class="content-item__media">
 									<img src="./assets/dest/images/content/speaker.jpg" alt=""/>
@@ -228,7 +248,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</div>
 							</section>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<section class="content-item text-center">
 								<div class="content-item__media">
 									<img src="./assets/dest/images/content/meal.jpg" alt=""/>
@@ -263,14 +283,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<i class="icon icon--speaker"></i><br/>
 					SPEAKER
 				</h1>
-				<ul class="speaker wp-badge__list">
-					<li><i class="wp-badge wp-badge--speaker"></i>WordCamp スピーカー</li>
-					<li><i class="wp-badge wp-badge--theme"></i>公式ディレクトリ　テーマ制作者</li>
-					<li><i class="wp-badge wp-badge--plugin"></i>公式ディレクトリ　プラグイン制作者</li>
-					<li><i class="wp-badge wp-badge--translation"></i>公式ディレクトリ　翻訳者</li>
-					<li><i class="wp-badge wp-badge--community"></i>コミュニティメンバー</li>
-					<li><i class="wp-badge wp-badge--code"></i>WordPress コア</li>
-				</ul>
+				<section class="about-icons">
+					<div class="about-icons__controller visible-xs-block js-overlay-controller"></div>
+					<h5 class="about-icons__title">アイコンについて</h5>
+
+					<ul class="about-icons__list about-icons__list--inline">
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--code"></i>
+							<span class="about-icons__description hidden-xs">WordPress コア貢献者</span>
+						</li>
+						<li class="about-icons__list-item">
+							<i class="wp-badge wp-badge--speaker"></i>
+							<span class="about-icons__description hidden-xs">WordCamp スピーカー</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--community"></i>
+							<span class="about-icons__description hidden-xs">コミュニティメンバー</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--theme"></i>
+							<span class="about-icons__description hidden-xs">公式ディレクトリ テーマ制作者</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--plugin"></i>
+							<span class="about-icons__description hidden-xs">公式ディレクトリ プラグイン制作者</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--translation"></i>
+							<span class="about-icons__description hidden-xs">公式ディレクトリ 翻訳者</span>
+						</li>
+					</ul>
+
+				</section>
+
+				<div class="overlay js-overlay">
+					<div class="overlay__backdrop js-overlay-controller"></div>
+					<div class="overlay__content">
+						<button type="button" class="close overlay__close js-overlay-controller" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<section class="about-icons about-icons--modal">
+							<h5 class="about-icons__title">アイコンについて</h5>
+
+							<ul class="about-icons__list">
+								<li class="about-icons__list-item ">
+									<i class="wp-badge wp-badge--code"></i>
+									<span class="about-icons__description">WordPress コア貢献者</span>
+								</li>
+								<li class="about-icons__list-item">
+									<i class="wp-badge wp-badge--speaker"></i>
+									<span class="about-icons__description">WordCamp スピーカー</span>
+								</li>
+								<li class="about-icons__list-item ">
+									<i class="wp-badge wp-badge--community"></i>
+									<span class="about-icons__description">コミュニティメンバー</span>
+								</li>
+								<li class="about-icons__list-item ">
+									<i class="wp-badge wp-badge--theme"></i>
+									<span class="about-icons__description">公式ディレクトリ テーマ制作者</span>
+								</li>
+								<li class="about-icons__list-item ">
+									<i class="wp-badge wp-badge--plugin"></i>
+									<span class="about-icons__description">公式ディレクトリ プラグイン制作者</span>
+								</li>
+								<li class="about-icons__list-item ">
+									<i class="wp-badge wp-badge--translation"></i>
+									<span class="about-icons__description">公式ディレクトリ 翻訳者</span>
+								</li>
+
+							</ul>
+
+						</section>
+					</div>
+
+				</div>
 
 				<div class="row">
 					<div class="col-md-4">
@@ -362,14 +446,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 							<h1 class="speaker__name">Toro_Unit</h1>
 							<div class="speaker__badges">
+								<i class="wp-badge wp-badge--code"></i>
 								<i class="wp-badge wp-badge--speaker"></i>
 								<i class="wp-badge wp-badge--plugin"></i>
-								<i class="wp-badge wp-badge--code"></i>
 								<i class="wp-badge wp-badge--translation"></i>
 							</div>
 							<div class="speaker__description">
-								長野でフリーランスのWEB屋さんしてます。<br/>
-								パーマリンクのプラグインとか、ネタプラグラインなどいろいろつくったりしてますが、得意な言語はCSSです。
+								最近フリーランスになったばかりの、フロントエンドエンジニア・WEBデザイナー。長野県在住。<br />
+								WordPress 4.3 ~ 4.4 コアコントリビューターしたり、
+								Custom Post Type Permalinks / Simple Post Type Permalinks とか、Hello Kushimoto
+								などのWordPressのプラグインを作ってます。
 							</div>
 							<div class="speaker__tweet">
 								<h2 class="speaker__tweet-title">ひとこと</h2>
@@ -929,7 +1015,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</dl>
 								<dl class="location__item location__item--price">
 									<dt class="location__h">参加費</dt>
-									<dd class="location__d">3,000円</dd>
+									<dd class="location__d">2,500円～<br />(軽食・ドリンクの費用を含みます)</dd>
 								</dl>
 								<dl class="location__item location__item--capacity">
 									<dt class="location__h">定員</dt>
@@ -985,7 +1071,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<i class="person person--oohara"></i>
 				</div>
 				<div class="contact__btn">
-					<a class="btn btn-register gtm-click" href="https://wordbash.doorkeeper.jp/events/36460?footer"
+					<a class="btn btn-register gtm-click" href="http://connpass.com/event/24608/?footer"
 					   target="_blank">参加登録</a>
 				</div>
 
