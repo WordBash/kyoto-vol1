@@ -1,6 +1,13 @@
-require( '../../src/js/jquery.smoothScroll.js' );
+var smoothScroll = require( '../../src/js/smooth-scroll.min.js' );
 
 jQuery( function( $ ) {
+	
+	/**
+	 * scroll
+	 */
+	( function() {
+		smoothScroll.init();
+	} )();
 	
 	/**
 	 * pagetop
