@@ -15,5 +15,5 @@ fi
 cd release
 
 git add -A
-git commit -m 'Update from travis'
-git push --quiet https://$GH_TOKEN@github.com/WordBash/kyoto-vol1.git gh-pages 2> /dev/null
+git commit -m "Update from travis $TRAVIS_COMMIT"
+git push --quiet "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" gh-pages 2> /dev/null
