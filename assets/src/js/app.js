@@ -4,7 +4,7 @@ jQuery( function( $ ) {
 	( function() {
 		"use strict";
 		$('.js-overlay-controller').on( 'click', function(){
-			$('.js-overlay').fadeToggle();
+			$('.js-overlay').fadeToggle( 200 );
 		});
 	} )();
 
