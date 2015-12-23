@@ -7,62 +7,127 @@
 	background-size: 100vw auto;
 	background-color: rgb( 0,34,67 );
 	color: #fff;
-	height: 680px;
+	padding-top: 30px;
+	padding-bottom: 15px;
 	overflow: hidden;
 	text-align: center;
 	position: relative;
+	
+	@include bp-min($screen-sm-min) {
+		padding-top: 100px;
+		padding-bottom: 20px;
+	}
+	
+	@include bp-min($screen-md-min) {
+		padding-top: 120px;
+		padding-bottom: 30px;
+	}
 
 	&__inner {
-		/* TODO: 位置調整 */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		@include bp-max($screen-xs-max) {
-			top: 45%;
-		}
-		.btn{
-			@include bp-max($screen-xs-max) {
-				display: none;
-			}
-		}
 	}
 
 	&__logo {
 		line-height: 1;
-		margin: 0 0 1rem;
+		margin: 0 auto 2rem;
+		max-width: 80%;
+		
+		@include bp-min($screen-sm-min) {
+			margin-bottom: 3rem;
+		}
+		
+		@include bp-min($screen-md-min) {
+			margin-bottom: 4.5rem;
+		}
 	}
 
 	&__copy {
-		font-size: 2.2rem;
+		display: none;
 		font-weight: normal;
-		margin: 0 0 7rem;
-		@include bp-max($screen-xs-max) {
-			display: none;
+		font-size: 3rem;
+		margin: 0 0 3rem;
+		
+		@include bp-min($screen-md-min) {
+			margin-bottom: 4.5rem;
+		}
+		
+		small {
+			color: #fff;
+			font-size: 2rem;
+		}
+		
+		@include bp-min($screen-sm-min) {
+			display: block;
+		}
+		
+		@include bp-min($screen-md-min) {
+			font-size: 3.6rem;
+			
+			small {
+				font-size: 2.2rem;
+			}
 		}
 	}
 
 	&__date {
-		font-size: 2.8rem;
+		font-size: 1.8rem;
 		line-height: 1.4;
 
 		small {
-			font-size: 2.2rem;
+			font-size: 1.4rem;
+		}
+		
+		@include bp-min($screen-sm-min) {
+			font-size: 2.8rem;
+			
+			small {
+				font-size: 2.2rem;
+			}
 		}
 	}
 
 	&__price {
-		font-size: 1.8rem;
-		margin: 0 0 0.8rem;
+		font-size: 1.4rem;
+		margin: 0 0 0.3rem;
 
 		strong {
-			font-size: 2.8rem;
+			font-size: 1.8rem;
 			font-weight: normal;
+		}
+		
+		@include bp-min($screen-sm-min) {
+			margin-bottom: 0.6rem;
+			font-size: 1.8rem;
+			
+			strong {
+				font-size: 2.8rem;
+			}
 		}
 	}
 
 	&__place {
-		font-size: 1.8rem;
-		margin: 0 0 3rem;
+		font-size: 1.4rem;
+		margin: 0 0 2rem;
+		
+		@include bp-min($screen-sm-min) {
+			font-size: 1.8rem;
+		}
+		
+		@include bp-min($screen-md-min) {
+			margin-bottom: 2.5rem;
+		}
+	}
+	
+	&__wapuu {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		width: 15%;
+		animation-name: pagetop;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+	
+	.contact__share {
+		padding-top: 2rem;
 	}
 }
