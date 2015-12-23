@@ -1,24 +1,24 @@
 .global-nav {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.2rem;
-	
+
 	@include bp-min($screen-sm-min) {
 		margin: 0 5px;
 	}
-	
+
 	&__list {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
 		display: flex;
-		
+
 		@include bp-min($screen-sm-min) {
 			display: block;
 			margin: 0 -2px;
 		}
 	}
-	
+
 	&__item {
 		margin: 0;
 		padding: 0;
@@ -26,7 +26,11 @@
 		flex-grow: 1;
 		flex-basis: (100% / 6);
 		overflow: hidden;
-		
+		border-right: solid 1px #aaa;
+		&:last-child {
+			border-right: none;
+		}
+
 		@include bp-min($screen-sm-min) {
 			background-image: url( '../images/global-nav/item.png' );
 			background-position: 50% 100%;
@@ -34,23 +38,25 @@
 			float: left;
 			padding: 0 2px 10px;
 			width: 104px;
+			border: none;
+
 		}
 	}
-	
+
 	&__item-label {
 		display: none;
-		
+
 		@include bp-min($screen-sm-min) {
 			display: block;
 		}
 	}
-	
+
 	.icon {
 		height: 60px;
 		width: 60px;
 		max-width: 100%;
 	}
-	
+
 	a {
 		background-color: #000;
 		color: #fff;
@@ -60,11 +66,11 @@
 		white-space: nowrap;
 		overflow: hidden;
 		transition: margin 0.3s ease-in-out;
-		
+
 		@include bp-min($screen-sm-min) {
 			margin-top: -55px;
 		}
-		
+
 		&:hover, &:active, &:focus {
 			color: #fff;
 			margin-top: 0;
