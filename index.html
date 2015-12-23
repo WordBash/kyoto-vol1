@@ -263,14 +263,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<i class="icon icon--speaker"></i><br/>
 					SPEAKER
 				</h1>
-				<ul class="speaker wp-badge__list">
-					<li><i class="wp-badge wp-badge--speaker"></i>WordCamp スピーカー</li>
-					<li><i class="wp-badge wp-badge--theme"></i>公式ディレクトリ　テーマ制作者</li>
-					<li><i class="wp-badge wp-badge--plugin"></i>公式ディレクトリ　プラグイン制作者</li>
-					<li><i class="wp-badge wp-badge--translation"></i>公式ディレクトリ　翻訳者</li>
-					<li><i class="wp-badge wp-badge--community"></i>コミュニティメンバー</li>
-					<li><i class="wp-badge wp-badge--code"></i>WordPress コア</li>
-				</ul>
+				<section class="about-icons">
+					<div class="about-icons__controller visible-xs-block js-overlay-controller"></div>
+					<h5 class="about-icons__title">アイコンについて</h5>
+
+					<ul class="about-icons__list about-icons__list--inline">
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--code"></i>
+							<span class="about-icons__description hidden-xs">WordPress コア貢献者</span>
+						</li>
+						<li class="about-icons__list-item">
+							<i class="wp-badge wp-badge--speaker"></i>
+							<span class="about-icons__description hidden-xs">WordCamp スピーカー</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--community"></i>
+							<span class="about-icons__description hidden-xs">コミュニティメンバー</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--theme"></i>
+							<span class="about-icons__description hidden-xs">公式ディレクトリ テーマ制作者</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--plugin"></i>
+							<span class="about-icons__description hidden-xs">公式ディレクトリ プラグイン制作者</span>
+						</li>
+						<li class="about-icons__list-item ">
+							<i class="wp-badge wp-badge--translation"></i>
+							<span class="about-icons__description hidden-xs">公式ディレクトリ 翻訳者</span>
+						</li>
+
+
+					</ul>
+
+				</section>
+
+				<div class="overlay js-overlay">
+					<div class="overlay__backdrop js-overlay-controller"></div>
+					<div class="overlay__content">
+						<button type="button" class="close overlay__close js-overlay-controller" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<section class="about-icons about-icons--modal">
+							<h5 class="about-icons__title">アイコンについて</h5>
+
+							<ul class="about-icons__list">
+								<li class="about-icons__list-item ">
+									<i class="wp-badge wp-badge--speaker"></i>
+									<span class="about-icons__description">WordCamp スピーカー</span>
+								</li>
+								<li class="about-icons__list-item">
+									<i class="wp-badge wp-badge--theme"></i>
+							<span class="about-icons__description">公式ディレクトリ　テーマ制作者
+						</span>
+								</li>
+								<li class="about-icons__list-item">
+									<i class="wp-badge wp-badge--plugin"></i>
+							<span class="about-icons__description">公式ディレクトリ　プラグイン制作者
+						</span>
+								</li>
+								<li class="about-icons__list-item">
+									<i class="wp-badge wp-badge--translation"></i>
+							<span class="about-icons__description">公式ディレクトリ　翻訳者
+						</span>
+								</li>
+								<li class="about-icons__list-item">
+									<i class="wp-badge wp-badge--community"></i>
+							<span class="about-icons__description">コミュニティメンバー
+						</span>
+								</li>
+								<li class="about-icons__list-item">
+									<i class="wp-badge wp-badge--code"></i>
+									<span class="about-icons__description">WordPressコア</span>
+								</li>
+							</ul>
+
+						</section>
+					</div>
+
+				</div>
 
 				<div class="row">
 					<div class="col-md-4">
