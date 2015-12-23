@@ -30,6 +30,10 @@
 		flex-grow: 1;
 		flex-basis: (100% / 6);
 		overflow: hidden;
+		border-right: solid 1px #aaa;
+		&:last-child {
+			border-right: none;
+		}
 
 		@include bp-min($screen-sm-min) {
 			background-image: url( '../images/global-nav/item.png' );
@@ -38,6 +42,8 @@
 			float: left;
 			padding: 0 2px 10px;
 			width: 104px;
+			border: none;
+
 		}
 	}
 
