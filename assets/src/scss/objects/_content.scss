@@ -6,18 +6,15 @@
 }
 
 .content-item {
-        margin-bottom: 2rem;
+    margin-bottom: 2rem;
 
 	@include bp-min($screen-md-min) {
 		margin-bottom: 6rem;
 	}
 
-        &:last-child {
-		//margin-bottom: 0;
-	}
-        &.last{
-                 margin-bottom: 0;
-        }
+    &.last{
+         margin-bottom: 0;
+    }
 
 	&__media {
 		margin: 0 0 2rem;
@@ -33,6 +30,16 @@
 
 	&__body {
 		font-size: 1.6rem;
+		
+		@include bp-max($screen-md-max) {
+			br {
+				display: none;
+			}
+		}
+		
+		@include bp-min($screen-lg-min) {
+			text-align: center;
+		}
 
 		:last-child {
 			margin-bottom: 0;
