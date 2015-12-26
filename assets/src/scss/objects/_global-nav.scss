@@ -59,20 +59,21 @@
 		height: 60px;
 		width: 60px;
 		max-width: 100%;
+		margin-bottom: 2px;
 	}
 
 	a {
 		background-color: #000;
 		color: #fff;
 		display: block;
-		padding: 5px 0;
+		padding: 7px 0 10px;
 		text-align: center;
 		white-space: nowrap;
 		overflow: hidden;
 		transition: margin 0.3s ease-in-out;
 
 		@include bp-min($screen-sm-min) {
-			margin-top: -55px;
+			margin-top: -56px;
 		}
 
 		&:hover, &:active, &:focus {
