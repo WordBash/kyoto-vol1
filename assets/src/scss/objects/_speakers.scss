@@ -114,22 +114,31 @@
 		}
 
 		&-item {
-			font-size: 1.6rem;
+			font-size: 18px;
 			display: inline-block;
 			margin: 0 2px;
 			padding: 0;
 		}
 
-		.fa-twitter {
+		.dashicons {
+			padding-top: 6px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.dashicons-twitter {
 			color: #55acee;
 		}
 
-		.fa-facebook-square {
+		.dashicons-facebook {
 			color: #315096;
 		}
 
 		.fa-github {
 			color: #333;
+			font-size: 19px;
 		}
 
 		.fa-wordpress {
