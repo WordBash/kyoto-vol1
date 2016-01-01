@@ -14,6 +14,18 @@
 		padding-bottom: 5px;
 		margin-bottom: 2rem;
 
+ 		&:first-child {
+			.session {
+				font-size: 2.2rem;
+			}
+		}
+
+		&:last-child {
+			.session {
+				font-size: 2.2rem;
+			}
+		}
+
 		@include bp-min($screen-md-min) {
 			margin-bottom: 0;
 			width: 50%;
@@ -29,12 +41,14 @@
 				margin-left: 50%;
 				padding-left: 60px;
 			}
+			
 		}
 
 		.session {
 			border: 1px solid #ccc;
 			border-radius: 5px;
-			font-size: 2.2rem;
+			font-size: 1.8rem;
+			line-height: 1.3;
 			padding: 20px;
 			text-align: center;
 			position: relative;
@@ -121,6 +135,10 @@
 
 			&__paneler {
 
+			}
+
+			&__icon {
+				margin-bottom: 10px;
 			}
 		}
 	}
