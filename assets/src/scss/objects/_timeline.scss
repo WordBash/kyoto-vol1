@@ -10,19 +10,51 @@
 	}
 
 	&__item {
-		padding-top: 5px;
-		padding-bottom: 5px;
 		margin-bottom: 2rem;
+
+		@include bp-min($screen-sm-min) {
+			@include paddingTB(5px, 5px);
+		}
 
  		&:first-child {
 			.session {
 				font-size: 2.2rem;
+				@include paddingTB(25px, 25px);
+
+				@include bp-min($screen-sm-min) {
+					@include paddingTB(30px, 30px);
+				}
 			}
 		}
 
 		&:last-child {
 			.session {
 				font-size: 2.2rem;
+				@include paddingTB(25px, 25px);
+				
+				@include bp-min($screen-sm-min) {
+					@include paddingTB(30px, 30px);
+				}
+			}
+		}
+
+		&:nth-of-type(2) {
+			.session {
+				@include paddingTB(25px, 25px);
+				
+				@include bp-min($screen-sm-min) {
+					@include paddingTB(40px, 40px);
+				}
+			}
+		}
+
+		&:nth-last-of-type(2) {
+			.session {
+				@include paddingTB(25px, 25px);
+				
+				@include bp-min($screen-sm-min) {
+					@include paddingTB(40px, 40px);
+				}
 			}
 		}
 
