@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@mixin paddingTB($top: 20px, $bottom: 20px) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
