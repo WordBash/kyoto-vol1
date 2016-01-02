@@ -2,12 +2,11 @@
 
 
 .global-nav {
-
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.2rem;
+	width: 100%;
 
-	@include bp-min($screen-sm-min) {
-		margin: 0 5px;
+	@include bp-min($screen-md-min) {
+		width: auto;
 	}
 
 	&__list {
@@ -15,35 +14,41 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		display: flex;
-
-		@include bp-min($screen-sm-min) {
-			display: block;
-			margin: 0 -2px;
-		}
 	}
 
 	&__item {
+		border-right: solid 1px #aaa;
+		float: left;
 		margin: 0;
 		padding: 0;
 		line-height: 1;
-		flex-grow: 1;
-		flex-basis: (100% / 6);
 		overflow: hidden;
-		border-right: solid 1px #aaa;
+		text-align: center;
+		width: 14.28571%;
+		
 		&:last-child {
 			border-right: none;
 		}
 
 		@include bp-min($screen-sm-min) {
-			background-image: url( '../images/global-nav/item.png' );
-			background-position: 50% 100%;
+			border: none;
+			background-image: url( '../images/global-nav/item.svg' );
+			background-size: contain;
+			background-position: 50% bottom;
 			background-repeat: no-repeat;
 			float: left;
-			padding: 0 2px 10px;
-			width: 104px;
-			border: none;
+			padding-bottom: 10px;
+			margin-right: 0.65104%;
+			width: 13.72768%;
 
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		
+		@include bp-min($screen-md-min) {
+			margin-right: 5px;
+			width: 100px;
 		}
 	}
 
@@ -52,34 +57,49 @@
 
 		@include bp-min($screen-sm-min) {
 			display: block;
+			margin-bottom: 8px;
+			font-size: 1.4rem;
+		}
+		
+		@include bp-min($screen-md-min) {
+			font-size: 1.6rem;
 		}
 	}
 
 	.icon {
-		height: 60px;
-		width: 60px;
+		height: 40px;
+		width: 40px;
+		margin-top: 3px;
 		max-width: 100%;
-		margin-bottom: 2px;
+
+		@include bp-min($screen-sm-min) {
+			height: 60px;
+			margin-bottom: -2px;
+			width: 60px;
+		}
 	}
 
 	a {
 		background-color: #000;
 		color: #fff;
 		display: block;
-		padding: 7px 0 10px;
-		text-align: center;
 		white-space: nowrap;
 		overflow: hidden;
+		margin-top: 0;
 		transition: margin 0.3s ease-in-out;
 
 		@include bp-min($screen-sm-min) {
-			margin-top: -56px;
+			margin-top: -55px;
 		}
 
 		&:hover, &:active, &:focus {
 			color: #fff;
 			margin-top: 0;
 			text-decoration: none;
+			
+			@include bp-max($screen-xs-max) {
+				background-color: #444;
+			}
 		}
 	}
 }
