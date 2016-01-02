@@ -108,14 +108,17 @@
 					content: 'MC';
 					display: inline-block;
 					background-color: #3DB6D1;
-					border-radius: 10px;
+					border-radius: 5px;
 					color: #fff;
 					font-family: 'Quicksand', sans-serif;
-					font-size: 1rem;
-					line-height: 1;
-					padding: 4px 8px;
+					font-size: 12px;
+					line-height: 15px;
+					letter-spacing: 0.1em;
 					position: absolute;
 					top: -20px;
+					padding: 0 5px 0 7px;
+					width: 34px;
+					height: 15px;
 				}
 			}
 
