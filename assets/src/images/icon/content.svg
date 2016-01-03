@@ -9,12 +9,12 @@
 	 xml:space="preserve">
 <defs>
 </defs>
-<path id="XMLID_12_" fill="#FFFFFF" d="M187,0H23C10.5,0,0,10,0,22.5V187c0,12.5,10.5,23,23,23h164.5c12.5,0,23-10.5,23-23V22.5
+<path id="XMLID_14_" fill="#FFFFFF" d="M187,0H23C10.5,0,0,10,0,22.5V187c0,12.5,10.5,23,23,23h164.5c12.5,0,23-10.5,23-23V22.5
 	C210,10,199.5,0,187,0L187,0z M193,190.5H17V47h175.5v143.5H193z"/>
-<path id="XMLID_11_" fill="#FFFFFF" d="M75,78.5c0,9.5-7.5,17-17,17s-17-7.5-17-17s7.5-17,17-17S75,69,75,78.5L75,78.5z"/>
-<rect id="XMLID_10_" x="89" y="71" fill="#FFFFFF" width="75" height="14.5"/>
-<path id="XMLID_9_" fill="#FFFFFF" d="M75,120c0,9.5-7.5,17-17,17s-17-7.5-17-17s7.5-17,17-17S75,110.5,75,120L75,120z"/>
-<rect id="XMLID_8_" x="89" y="113" fill="#FFFFFF" width="75" height="14"/>
-<path id="XMLID_6_" fill="#FFFFFF" d="M75,162c0,9.5-7.5,17-17,17s-17-7.5-17-17s7.5-17,17-17S75,152.5,75,162L75,162z"/>
-<rect id="XMLID_5_" x="89" y="154.5" fill="#FFFFFF" width="75" height="14"/>
+<path id="XMLID_13_" fill="#FFFFFF" d="M75,78.5c0,9.5-7.5,17-17,17s-17-7.5-17-17s7.5-17,17-17S75,69,75,78.5L75,78.5z"/>
+<rect id="XMLID_7_" x="89" y="71" fill="#FFFFFF" width="75" height="14.5"/>
+<path id="XMLID_4_" fill="#FFFFFF" d="M75,120c0,9.5-7.5,17-17,17s-17-7.5-17-17s7.5-17,17-17S75,110.5,75,120L75,120z"/>
+<rect id="XMLID_3_" x="89" y="113" fill="#FFFFFF" width="75" height="14"/>
+<path id="XMLID_2_" fill="#FFFFFF" d="M75,162c0,9.5-7.5,17-17,17s-17-7.5-17-17s7.5-17,17-17S75,152.5,75,162L75,162z"/>
+<rect id="XMLID_1_" x="89" y="154.5" fill="#FFFFFF" width="75" height="14"/>
 </svg>
