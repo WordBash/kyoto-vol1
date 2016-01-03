@@ -26,6 +26,9 @@
 		margin: 1em auto;
 		border-radius: 3px;
 
+		@include bp-min($screen-sm-min) {
+			display: none;
+		}
 	}
 
 	&__list {
