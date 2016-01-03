@@ -9,10 +9,11 @@
 	width: 35px;
 	overflow: hidden;
 	border-radius: 100%;
+	border: solid 1px #ccc;
+
 
 	&--conti {
 		background-image: url( 'https://www.gravatar.com/avatar/bbfc276088051356a5967389b705148e?s=340' );
-		border: solid 1px #ddd;
 	}
 
 	&--fukazawa {
@@ -33,7 +34,6 @@
 
 	&--mignon {
 		background-image: url( 'https://www.gravatar.com/avatar/1a859fa75dfe740285ea10c18c574749?s=340' );
-		border: solid 1px #ddd;
 	}
 
 	&--moriyama {
