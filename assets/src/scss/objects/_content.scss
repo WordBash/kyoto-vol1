@@ -25,23 +25,17 @@
 		font-size: 1.8rem;
 		font-weight: bold;
 		margin: 0 0 1rem;
+		text-align: center;
 
 		@include bp-min($screen-sm-min) {
 			font-size: 2.1rem;
-			text-align: center;
 		}
 	}
 
 	&__body {
 		font-size: 1.6rem;
 		
-		@include bp-max($screen-md-max) {
-			br {
-				display: none;
-			}
-		}
-		
-		@include bp-min($screen-lg-min) {
+		@include bp-min($screen-sm-min) {
 			text-align: center;
 		}
 
