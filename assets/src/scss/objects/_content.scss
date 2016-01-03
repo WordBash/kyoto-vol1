@@ -35,7 +35,7 @@
 	&__body {
 		font-size: 1.6rem;
 		
-		@include bp-min($screen-lg-min) {
+		@include bp-min($screen-sm-min) {
 			text-align: center;
 		}
 
