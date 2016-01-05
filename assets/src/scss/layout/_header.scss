@@ -7,18 +7,21 @@
 
 	.global-nav {
 		z-index: 1;
-
-		@include bp-max($screen-xs-max) {
-			position: fixed;
-			bottom: 0;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		@include bp-min($screen-sm-min) {
+			position: absolute;
+			bottom: auto;
+			top: 0;
 			left: 0;
 			right: 0;
 		}
 
-		@include bp-min($screen-sm-min) {
-			position: absolute;
-			top: 0;
-			right: 0;
+		@include bp-min($screen-md-min) {
+			left: auto;
 		}
 	}
 }
