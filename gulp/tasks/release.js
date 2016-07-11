@@ -12,6 +12,7 @@ gulp.task('copy', function() {
 	return gulp.src(
 		[
 			'./**/*.html',
+			'./**/CNAME',
 			'./**/*.ico',
 			'./assets/**',
 			"!./release/**",
