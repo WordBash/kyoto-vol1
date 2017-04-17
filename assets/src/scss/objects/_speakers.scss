@@ -115,26 +115,51 @@
 		}
 
 		&-item {
-			font-size: 1.6rem;
+			font-size: 18px;
 			display: inline-block;
 			margin: 0 2px;
 			padding: 0;
 		}
 
-		.fa-twitter {
-			color: #55acee;
+		.dashicons {
+			padding-top: 6px;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 
-		.fa-facebook-square {
+		.dashicons-twitter {
+			color: #55acee;
+			
+			&:hover {
+				color: #88cdff;
+			}
+		}
+
+		.dashicons-facebook {
 			color: #315096;
+
+			&:hover {
+				color: #3f88eb;
+			}
 		}
 
 		.fa-github {
 			color: #333;
+			font-size: 19px;
+		
+			&:hover {
+				color: #888;
+			}
 		}
 
 		.fa-wordpress {
 			color: #333;
+			
+			&:hover {
+				color: #a2a2a2;
+			}
 		}
 	}
 
